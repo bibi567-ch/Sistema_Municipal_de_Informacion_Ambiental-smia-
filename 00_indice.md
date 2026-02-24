@@ -13,9 +13,7 @@
 | 01 | [`01_Introduccion_y_Contexto.md`](01_Introduccion_y_Contexto.md) | Antecedentes TDR, justificación, alcance, fases | ✅ |
 | 02 | [`02_Requerimientos_Funcionales.md`](02_Requerimientos_Funcionales.md) | 15 RF con formato estándar + ACTOR + criterios DADO/CUANDO/ENTONCES | ✅ |
 | 03 | [`03_Requerimientos_No_Funcionales.md`](03_Requerimientos_No_Funcionales.md) | 11 RNF — categorías URPS completas con métricas | ✅ |
-| 04 | [`04_Stakeholders.md`](04_Stakeholders.md) | Stakeholders y roles | ✅ |
 
----
 
 ## Convenciones de Commits
 
@@ -32,7 +30,5 @@
 |---------|------|
 | `RF-XX` | Requerimiento Funcional |
 | `RNF-XX` | Requerimiento No Funcional (URPS) |
-| `RNF-OPS-XX` | RNF Operabilidad DevOps |
-| `RNF-CONF-XX` | RNF Configuración 12-Factor |
-| `RNF-SEC-XX` | RNF Seguridad DevSecOps |
+
 
