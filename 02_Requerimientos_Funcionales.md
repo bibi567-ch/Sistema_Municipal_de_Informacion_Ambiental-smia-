@@ -1,4 +1,5 @@
-## Requerimientos Funcionales (RF)
+## 02_Requerimientos Funcionales (RF)
+
 
 | ID | Descripción | Prioridad | Criterio de Aceptación |
 |----|-------------|-----------|------------------------|
@@ -17,4 +18,3 @@
 | RF-13 | El sistema debe enviar notificaciones automáticas por correo al registrar una solicitud | **Could** | El usuario recibe un correo de confirmación tras registrar la solicitud |
 | RF-14 | El sistema debe mostrar un dashboard con indicadores ambientales consolidados | **Could** | El panel muestra métricas resumidas y actualizadas |
 | RF-15 | El sistema no incluirá aplicación móvil nativa en fase de proyecto | **Won't have** | La funcionalidad móvil queda documentada para futuras versiones |
-
