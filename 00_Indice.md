@@ -16,7 +16,7 @@
 |---|---------|-----------|--------|
 | 01 | [`01_Introduccion_y_Contexto.md`](01_Introduccion_y_Contexto.md) | Antecedentes TDR, justificación, alcance, stakeholders |
 | 02 | [`02_Requerimientos_Funcionales.md`](02_Requerimientos_Funcionales.md) | 15 RF con formato Historias de Usuario y Criterios de Aceptación |
-| 03 | [`03_Requerimientos_No_Funcionales.md`](03_Requerimientos_No_Funcionales.md) | RNF enfocados en DevSecOps, Seguridad y Operabilidad |
+| 03 | [`03_Requerimientos_No_Funcionales.md`](03_Requerimientos_No_Funcionales_DevOps.md) | RNF enfocados en DevSecOps, Seguridad y Operabilidad |
 
 
 
@@ -39,6 +39,7 @@
 |---------|------|
 | `RF-XX` | Requerimiento Funcional |
 | `RNF-XX` | Requerimiento No Funcional (URPS) |
+
 
 
 
