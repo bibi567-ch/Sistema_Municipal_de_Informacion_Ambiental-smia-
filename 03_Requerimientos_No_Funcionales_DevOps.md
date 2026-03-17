@@ -1,66 +1,29 @@
 # 03_Requerimientos_No_Funcionales_DevOps
 
+| ID | Requerimiento | Prioridad | Criterios de Aceptación |
+|----|--------------|----------|--------------------------|
+| RF-01 | Autenticación segura con OAuth2/JWT | Alta | El usuario puede iniciar sesión; se genera token válido; se bloquea tras 3 intentos fallidos |
+| RF-02 | Gestión de roles y permisos | Alta | El administrador puede asignar roles; los usuarios solo acceden a funciones permitidas |
+| RF-03 | Registro de bitácora (logs) | Media | Se registran acciones con usuario, fecha y hora; el auditor puede consultarlas |
+| RF-04 | Registro de puntos georreferenciados | Alta | Se pueden registrar coordenadas; los puntos se almacenan correctamente |
+| RF-05 | Carga de datos técnicos ambientales | Alta | Los técnicos ingresan datos; el sistema los valida y guarda correctamente |
+| RF-06 | Migración de datos históricos | Media | Se cargan datos de al menos 5 años; se pueden consultar sin errores |
+| RF-07 | Generación de reportes | Alta | Se generan reportes filtrados por módulo; los datos son correctos |
+| RF-08 | Consulta pública | Alta | El ciudadano puede acceder sin login; la información es visible |
+| RF-09 | Integración con SIGIR | Media | Se sincronizan datos correctamente con el sistema externo |
+| RF-10 | Mapas dinámicos con filtros | Alta | El usuario puede filtrar por contaminante y periodo; el mapa se actualiza |
+| RF-11 | Exportación de reportes | Alta | Se exportan reportes en PDF/Excel sin errores |
+| RF-12 | Solicitudes de inspección | Media | El ciudadano puede registrar solicitudes; se almacenan correctamente |
+| RF-13 | Notificaciones por correo | Media | El usuario recibe notificaciones ante eventos del sistema |
+| RF-14 | Dashboard ambiental | Alta | Se visualizan indicadores claros y actualizados |
+| RF-15 | Compresión de imágenes | Baja | Las imágenes se reducen sin perder calidad significativa |
+| RF-16 | Documentación app móvil futura | Baja | Existe documentación del roadmap de app móvil |
 
-## RNF-01 – Seguridad
+# 03.1_Requerimientos_DevOps
 
-
-**Categoría:** Seguridad  
-
-
-**Descripción:**  
-El sistema no debe almacenar contraseñas en texto plano. Todas las credenciales de usuario deben almacenarse utilizando algoritmos de hashing seguro como bcrypt o Argon2.
-
-
-**Justificación:**  
-Garantiza la protección de la información sensible de los usuarios y reduce el riesgo ante posibles ataques o accesos no autorizados.
-
-
-**Métrica de Éxito:**  
-- Verificación técnica de que las contraseñas están encriptadas en la base de datos.  
-- Pruebas de autenticación exitosas sin exponer datos sensibles.
-
-
----
-
-
-## RNF-02 – Rendimiento
-
-
-**Categoría:** Performance  
-
-
-**Descripción:**  
-El sistema debe garantizar un tiempo de respuesta menor a 1 segundo en búsquedas que involucren hasta 10.000 registros.
-
-
-**Justificación:**  
-Asegura eficiencia en la consulta de información ambiental y mejora la experiencia del usuario.
-
-
-**Métrica de Éxito:**  
-- Pruebas de carga realizadas con 10.000 registros.  
-- Tiempo de respuesta promedio menor a 1 segundo.
-
-
----
-
-
-## RNF-03 – Compatibilidad
-
-
-**Categoría:** Usabilidad / Compatibilidad  
-
-
-**Descripción:**  
-El sistema debe ser Web Responsive, permitiendo su correcta visualización y funcionamiento tanto en dispositivos móviles como en computadoras de escritorio.
-
-
-**Justificación:**  
-Facilita el acceso a la plataforma desde diferentes dispositivos y mejora la accesibilidad para usuarios internos y externos.
-
-
-**Métrica de Éxito:**  
-- Visualización correcta en navegadores modernos (Chrome, Firefox, Edge).  
-- Adaptación automática del diseño según tamaño de pantalla.
-
-
+| ID | Requerimiento | Prioridad | Criterios de Aceptación |
+|----|--------------|----------|--------------------------|
+| DEV-01 | Contenerización con Docker | Alta | El sistema se ejecuta mediante contenedores sin errores |
+| DEV-02 | Ambiente de Staging | Alta | Existe entorno separado para pruebas; despliegue funcional |
+| DEV-03 | Integración Continua (CI/CD) | Alta | Se ejecutan pipelines automáticos en cada cambio de código |
+| DEV-04 | Pruebas de seguridad (Pentesting) | Media | Se realizan pruebas; se identifican y corrigen vulnerabilidades |
