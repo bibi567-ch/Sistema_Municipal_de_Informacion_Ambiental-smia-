@@ -1,17 +1,17 @@
-##04.Historias de Usuarios
+##04_Historias_Usuarios
 
-Autenticación y Seguridad
+#Autenticación y Seguridad
 - HU-01.1: Como usuario del sistema, quiero iniciar sesión con credenciales seguras, para acceder de forma protegida a la información ambiental.
 - HU-01.2: Como administrador, quiero gestionar los accesos de los usuarios, para garantizar que solo personas autorizadas ingresen al sistema.
   
-Roles y Permisos
+#Roles y Permisos
 - HU-02.1: Como administrador, quiero asignar roles a los usuarios, para controlar qué funciones pueden utilizar.
 - HU-02.2: Como usuario técnico, quiero tener acceso solo a los módulos ambientales, para evitar modificar información administrativa.
   
-Auditoría
+#Auditoría
 - HU-03.1: Como auditor, quiero visualizar el registro de acciones del sistema, para garantizar transparencia en la gestión de información.
 
-- Monitoreo Ambiental
+#Monitoreo Ambiental
 - HU-04.1: Como técnico de calidad del aire, quiero registrar puntos de monitoreo con coordenadas, para analizar contaminación del aire.
 - HU-04.2: Como técnico de calidad del agua, quiero registrar puntos de monitoreo en ríos o lagunas, para evaluar la calidad hídrica.
 - HU-04.3: Como técnico de residuos, quiero registrar puntos de control en rellenos sanitarios, para monitorear la gestión de residuos.
@@ -19,7 +19,7 @@ Auditoría
 - HU-04.5: Como técnico de emisiones vehiculares, quiero registrar puntos móviles de medición, para controlar emisiones del parque automotor.
 - HU-04.6: Como analista ambiental, quiero visualizar todos los puntos en un mapa interactivo, para analizar la distribución geográfica.
 
-Datos Ambientales
+#Datos Ambientales
 - HU-05.1: Como técnico de calidad del aire, quiero cargar datos de contaminantes, para calcular el ICA.
 - HU-05.2: Como técnico de calidad del agua, quiero ingresar parámetros químicos como DBO y DQO, para evaluar la calidad del agua.
 - HU-05.3: Como técnico de residuos, quiero registrar datos de pesaje de residuos, para controlar volúmenes.
@@ -27,10 +27,10 @@ Datos Ambientales
 - HU-05.5: Como técnico de emisiones vehiculares, quiero registrar mediciones de gases, para evaluar contaminación vehicular.
 - HU-05.6: Como analista ambiental, quiero que el sistema calcule indicadores automáticamente, para evitar errores manuales.
 
-Históricos
+#Históricos
 - HU-06.1: Como planificador, quiero consultar datos históricos, para analizar tendencias ambientales.
 
-Reportes
+#Reportes
 - HU-07.1: Como jefe de calidad del aire, quiero generar reportes filtrados.
 - HU-07.2: Como jefe de calidad del agua, quiero generar reportes de calidad hídrica.
 - HU-07.3: Como jefe de residuos, quiero generar reportes del relleno sanitario.
@@ -38,38 +38,38 @@ Reportes
 - HU-07.5: Como jefe de emisiones vehiculares, quiero generar reportes de gases.
 - HU-07.6: Como analista ambiental, quiero visualizar gráficos estadísticos.
 
-Consulta Pública
+#Consulta Pública
 - HU-08.1: Como ciudadano, quiero consultar información ambiental sin registrarme, para informarme sobre el ambiente.
-Integración
+#Integración
 - HU-09.1: Como encargado de residuos, quiero sincronizar datos con SIGIR.
 
-Mapas
+#Mapas
 - HU-10.1: Como analista ambiental, quiero filtrar mapas por contaminante y periodo.
 
-Exportación
+#Exportación
 - HU-11.1: Como técnico, quiero exportar reportes.
 
-Ciudadano
+#Ciudadano
 - HU-12.1: Como ciudadano, quiero registrar solicitudes de inspección ambiental.
 
-Notificaciones
+#Notificaciones
 - HU-13.1: Como usuario, quiero recibir notificaciones del sistema.
 
-Dashboard
+#Dashboard
 - HU-14.1: Como secretario ambiental, quiero visualizar indicadores para tomar decisiones.
 
-Imágenes
+#Imágenes
 - HU-15.1: Como técnico de campo, quiero optimizar fotografías.
 
-Roadmap
+#Roadmap
 - HU-16.1: Como gestor del proyecto, quiero documentar la app móvil para futuras versiones.
 
-No Funcionales
+#No Funcionales
 - HU-17.1: Como encargado de seguridad, quiero proteger contraseñas con hashing.
 - HU-18.1: Como usuario, quiero consultas rápidas.
 - HU-19.1: Como usuario móvil, quiero usar el sistema desde cualquier dispositivo.
 
-DevOps
+#DevOps
 - HU-20.1: Como ingeniero DevOps, quiero ejecutar el sistema en Docker.
 - HU-20.2: Como equipo de desarrollo, quiero probar el sistema en staging.
 - HU-20.3: Como desarrollador, quiero usar pipelines CI/CD.
