@@ -1,20 +1,22 @@
 ## 02_Requerimientos Funcionales (RF)
 
+# 📌 03 - Requerimientos Funcionales
 
-| ID | Descripción | Prioridad | Criterio de Aceptación |
-|----|-------------|-----------|------------------------|
-| RF-01 | El sistema debe validar las credenciales de usuario (Login) | **Must** | Acceso denegado tras 3 intentos fallidos |
-| RF-02 | El sistema debe permitir la asignación de roles y permisos a los usuarios | **Must** | Un usuario con rol técnico no puede acceder a funciones administrativas |
-| RF-03 | El sistema debe registrar una bitácora (log) de todas las acciones realizadas en la plataforma | **Must** | Cada acción realizada queda registrada con usuario, fecha y hora |
-| RF-04 | El sistema debe permitir registrar puntos de monitoreo georreferenciados (aire, agua, residuos) | **Must** | El punto se visualiza correctamente en el mapa con coordenadas guardadas |
-| RF-05 | El sistema debe permitir cargar datos técnicos de monitoreo ambiental | **Must** | Los datos ingresados se almacenan correctamente en la base de datos y pueden consultarse |
-| RF-06 | El sistema debe migrar información histórica de al menos 5 años a la nueva base de datos | **Must** | Los registros históricos son visibles y consultables en el sistema |
-| RF-07 | El sistema debe generar reportes estadísticos por módulo ambiental | **Must** | El sistema genera reportes con filtros por fecha, área y tipo de monitoreo |
-| RF-08 | El sistema debe permitir la consulta pública de información ambiental general | **Must** | Un ciudadano puede acceder sin autenticación a datos públicos |
-| RF-09 | El sistema debe integrarse con el SIGIR nacional para intercambio de información de residuos | **Must** | Los datos de residuos se sincronizan con el sistema externo |
-| RF-10 | El sistema debe generar mapas dinámicos con visualización de datos ambientales | **Should** | El mapa muestra filtros por tipo de monitoreo y periodo de tiempo |
-| RF-11 | El sistema debe permitir exportar reportes en formato PDF o Excel | **Should** | El reporte descargado contiene los datos filtrados correctamente |
-| RF-12 | El sistema debe permitir solicitudes digitales de inspección ciudadana | **Should** | La solicitud queda registrada y genera número de seguimiento |
-| RF-13 | El sistema debe enviar notificaciones automáticas por correo al registrar una solicitud | **Could** | El usuario recibe un correo de confirmación tras registrar la solicitud |
-| RF-14 | El sistema debe mostrar un dashboard con indicadores ambientales consolidados | **Could** | El panel muestra métricas resumidas y actualizadas |
-| RF-15 | El sistema no incluirá aplicación móvil nativa en fase de proyecto | **Won't have** | La funcionalidad móvil queda documentada para futuras versiones |
+| ID | Requerimiento | Prioridad | Criterios de Aceptación |
+|----|--------------|----------|--------------------------|
+| RF-01 | Autenticación segura con OAuth2/JWT y bloqueo tras intentos fallidos | Alta | El usuario puede iniciar sesión correctamente; el sistema genera un token válido; se bloquea la cuenta tras 3 intentos fallidos |
+| RF-02 | Gestión de roles y permisos | Alta | El administrador puede asignar roles; los usuarios acceden solo a funcionalidades autorizadas |
+| RF-03 | Registro de bitácora (logs) | Media | El sistema registra usuario, acción, fecha y hora; el auditor puede visualizar los logs |
+| RF-04 | Registro de puntos de monitoreo georreferenciados | Alta | El usuario puede registrar coordenadas; los puntos se almacenan correctamente y se visualizan en el sistema |
+| RF-05 | Carga de datos técnicos ambientales | Alta | Los técnicos ingresan datos; el sistema valida y guarda correctamente la información |
+| RF-06 | Migración de datos históricos (5 años) | Media | Los datos históricos se cargan correctamente; el sistema permite su consulta sin errores |
+| RF-07 | Generación de reportes estadísticos | Alta | El usuario genera reportes filtrados; la información es correcta y consistente |
+| RF-08 | Consulta pública de información ambiental | Alta | El ciudadano accede sin autenticación; la información se muestra correctamente |
+| RF-09 | Integración con sistema SIGIR | Media | Los datos se sincronizan correctamente con el sistema externo |
+| RF-10 | Mapas dinámicos con filtros ambientales | Alta | El usuario puede filtrar por contaminante y periodo; el mapa se actualiza correctamente |
+| RF-11 | Exportación de reportes (PDF/Excel) | Alta | El usuario exporta reportes sin errores en formato PDF o Excel |
+| RF-12 | Solicitudes digitales de inspección | Media | El ciudadano registra solicitudes; el sistema almacena la información correctamente |
+| RF-13 | Notificaciones por correo electrónico | Media | El sistema envía notificaciones correctamente ante eventos |
+| RF-14 | Dashboard con indicadores ambientales | Alta | El sistema muestra indicadores actualizados y visuales claros |
+| RF-15 | Compresión automática de fotografías | Baja | Las imágenes se comprimen sin afectar significativamente la calidad |
+| RF-16 | Documentación de aplicación móvil futura | Baja | Existe documentación del roadmap de la app móvil |
