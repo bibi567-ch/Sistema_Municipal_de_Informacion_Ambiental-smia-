@@ -2,7 +2,7 @@
 
 
 **Equipo:** Génesis Apaza ·  Anel Quiroz  · Esmeralda Alegre · Eva Chino · Daynor Mamani  
-**Fecha:** 26/02/2026 | **Versión:** 1.2
+**Fecha:** 19/03/2026 | **Versión:** 1.2
 
 
 ---
