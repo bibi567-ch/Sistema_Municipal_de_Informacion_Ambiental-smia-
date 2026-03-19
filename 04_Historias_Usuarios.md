@@ -423,6 +423,7 @@ Link mockup : https://www.figma.com/make/JyabLSV7yYMC06s2rfGVih/Generar-reportes
 
 **Valor de negocio:** Cumple la Ley de Transparencia del GAMLP y el objetivo de participación ciudadana del Proyecto Basura 0, apuntando al KPI de 5 000 usuarios únicos mensuales en el primer trimestre. Cumple WCAG 2.1 AA.
 **RF asociado:** RF-08 | **Estimación:** 3 puntos | **Prioridad:** Must Have
+Link mockup:  https://www.figma.com/make/q9aZzew39qF7jf3B6kuWUk/Consulta-de-informaci%C3%B3n-ambiental?t=blDQs7fJ4NUN8uid-20&fullscreen=1
 
 ---
 
