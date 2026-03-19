@@ -7,7 +7,7 @@
 
 ---
 
-## Autenticación y Seguridad
+## AUTENTICACIÓN Y SEGURIDAD
 
 ### HU-01.1
 
@@ -482,7 +482,7 @@ SE CREO EN LA RAMA: feature/HU-01.2#1
 
 ---
 
-## Ciudadano
+## Participación Ciudadano
 
 ### HU-12.1
 
@@ -536,7 +536,7 @@ SE CREO EN LA RAMA: feature/HU-01.2#1
 
 ---
 
-## Imágenes
+## OPTIMIZACIÓN (Imágenes)
 
 ### HU-15.1
 
