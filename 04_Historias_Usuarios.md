@@ -23,7 +23,7 @@
 **Valor de negocio:** Protege la información ambiental oficial del GAMLP ante accesos no autorizados, cumpliendo la Ley N° 164 TIC y la Normativa 337.
 **RF asociado:** RF-01 | **Estimación:** 3 puntos | **Prioridad:** Must Have
 
-**link mockup** : https://www.figma.com/make/tKBYxgLWHbF4HgmaEIKjuD/Secure-Login-with-JWT?t=kML16D12bqdJgUJx-20&fullscreen=1&preview-route=%2Fdashboard
+link mockup : https://www.figma.com/make/tKBYxgLWHbF4HgmaEIKjuD/Secure-Login-with-JWT?t=kML16D12bqdJgUJx-20&fullscreen=1&preview-route=%2Fdashboard
 ---
 
 ### HU-01.2
@@ -324,7 +324,8 @@
 
 **Valor de negocio:** Elimina 3-5 días de trabajo manual por informe, cumpliendo los plazos de entrega de reportes oficiales al MMAyA establecidos en la Ley N° 755.
 **RF asociado:** RF-07 | **Estimación:** 3 puntos | **Prioridad:** Must Have
-**Link mockup** : https://www.figma.com/make/JyabLSV7yYMC06s2rfGVih/Generar-reportes-de-calidad?t=2iQ4JZxE2z1OOko8-20&fullscreen=1
+
+Link mockup : https://www.figma.com/make/JyabLSV7yYMC06s2rfGVih/Generar-reportes-de-calidad?t=2iQ4JZxE2z1OOko8-20&fullscreen=1
 ---
 
 ### HU-07.2
