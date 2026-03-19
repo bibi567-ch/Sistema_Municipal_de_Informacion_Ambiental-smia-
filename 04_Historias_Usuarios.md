@@ -40,6 +40,7 @@
 **Valor de negocio:** Permite al administrador gestionar el ciclo de vida de cuentas de forma autónoma, reduciendo tiempos de respuesta ante incidentes de seguridad y cumpliendo la segregación de funciones de la Normativa 337 GAMLP.
 **RF asociado:** RF-01, RF-02 | **Estimación:** 2 puntos | **Prioridad:** Must Have
 
+SE CREO EN LA RAMA: feature/HU-01.2#1
 ---
 
 ## Roles y Permisos
