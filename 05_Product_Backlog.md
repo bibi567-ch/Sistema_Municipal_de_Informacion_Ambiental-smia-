@@ -5,8 +5,8 @@ Secretaría Municipal de Gestión Ambiental (SMGA)
 # **PRODUCT BACKLOG**
 ## **Sistema Municipal de Información Ambiental (SMIA) — Proyecto "Basura 0"**
 
-## **1. ÉPICAS DEL PRODUCTO**
-El Product Backlog se organiza en seis épicas, cada una correspondiente a un grupo funcional del sistema SMIA.
+## **1. SPRINT SEMANAL**
+El Product Backlog se organiza en seis sprint, cada una correspondiente a un grupo funcional del sistema SMIA.
 
 |**ID**|**Épica**|**Historias incluidas**|**SP**|**Sprints**|
 | :-: | :-: | :-: | :-: | :-: |
