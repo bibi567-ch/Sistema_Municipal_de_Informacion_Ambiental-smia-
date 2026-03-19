@@ -22,6 +22,7 @@
 
 **Valor de negocio:** Protege la información ambiental oficial del GAMLP ante accesos no autorizados, cumpliendo la Ley N° 164 TIC y la Normativa 337.
 **RF asociado:** RF-01 | **Estimación:** 3 puntos | **Prioridad:** Must Have
+
 **link mockup** : https://www.figma.com/make/tKBYxgLWHbF4HgmaEIKjuD/Secure-Login-with-JWT?t=kML16D12bqdJgUJx-20&fullscreen=1&preview-route=%2Fdashboard
 ---
 
