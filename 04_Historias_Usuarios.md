@@ -500,24 +500,6 @@ SE CREO EN LA RAMA: feature/HU-01.2#1
 
 ---
 
-## Notificaciones
-
-### HU-13.1
-
-**Como** usuario que registró una solicitud de inspección
-**Quiero** recibir notificaciones automáticas por correo electrónico sobre el estado de mi solicitud
-**Para** estar informado sobre el avance de mi denuncia sin necesidad de ingresar al portal cada vez, mejorando la percepción de transparencia del GAMLP
-
-**Criterios de Aceptación:**
-- Cuando ocurre un evento relevante (registro de solicitud, cambio de estado), entonces el usuario recibe notificación por correo con número de seguimiento, descripción y estado actualizado en < 2 minutos.
-- Dado que el correo se envía, cuando se abre en Gmail, Outlook o webmail, entonces el formato HTML se visualiza correctamente sin elementos rotos ni imágenes faltantes.
-- Dado que el técnico marca la solicitud como "Cerrada", cuando se envía la notificación, entonces incluye el resumen de las acciones tomadas y la fecha de cierre.
-
-**Valor de negocio:** Mejora la percepción de transparencia y efectividad del GAMLP ante la ciudadanía, alineándose con el objetivo de participación ciudadana del Proyecto Basura 0.
-**RF asociado:** RF-13 | **Estimación:** 2 puntos | **Prioridad:** Could Have
-
----
-
 ## Dashboard
 
 ### HU-14.1
@@ -533,6 +515,24 @@ SE CREO EN LA RAMA: feature/HU-01.2#1
 
 **Valor de negocio:** Habilita la toma de decisiones en tiempo real para la dirección de la SMGA, cumpliendo el KPI de reducción del 60% en el tiempo de emisión de alertas definido por ASDI.
 **RF asociado:** RF-14 | **Estimación:** 5 puntos | **Prioridad:** Could Have
+
+---
+
+## Notificaciones
+
+### HU-13.1
+
+**Como** usuario que registró una solicitud de inspección
+**Quiero** recibir notificaciones automáticas por correo electrónico sobre el estado de mi solicitud
+**Para** estar informado sobre el avance de mi denuncia sin necesidad de ingresar al portal cada vez, mejorando la percepción de transparencia del GAMLP
+
+**Criterios de Aceptación:**
+- Cuando ocurre un evento relevante (registro de solicitud, cambio de estado), entonces el usuario recibe notificación por correo con número de seguimiento, descripción y estado actualizado en < 2 minutos.
+- Dado que el correo se envía, cuando se abre en Gmail, Outlook o webmail, entonces el formato HTML se visualiza correctamente sin elementos rotos ni imágenes faltantes.
+- Dado que el técnico marca la solicitud como "Cerrada", cuando se envía la notificación, entonces incluye el resumen de las acciones tomadas y la fecha de cierre.
+
+**Valor de negocio:** Mejora la percepción de transparencia y efectividad del GAMLP ante la ciudadanía, alineándose con el objetivo de participación ciudadana del Proyecto Basura 0.
+**RF asociado:** RF-13 | **Estimación:** 2 puntos | **Prioridad:** Could Have
 
 ---
 
