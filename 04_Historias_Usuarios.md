@@ -325,7 +325,7 @@ link mockup : https://www.figma.com/make/tKBYxgLWHbF4HgmaEIKjuD/Secure-Login-wit
 **Valor de negocio:** Elimina 3-5 días de trabajo manual por informe, cumpliendo los plazos de entrega de reportes oficiales al MMAyA establecidos en la Ley N° 755.
 **RF asociado:** RF-07 | **Estimación:** 3 puntos | **Prioridad:** Must Have
 
-Link mockup : https://www.figma.com/make/JyabLSV7yYMC06s2rfGVih/Generar-reportes-de-calidad?t=2iQ4JZxE2z1OOko8-20&fullscreen=1
+**Link mockup:**            https://www.figma.com/make/JyabLSV7yYMC06s2rfGVih/Generar-reportes-de-calidad?t=2iQ4JZxE2z1OOko8-20&fullscreen=1
 ---
 
 ### HU-07.2
@@ -423,7 +423,7 @@ Link mockup : https://www.figma.com/make/JyabLSV7yYMC06s2rfGVih/Generar-reportes
 
 **Valor de negocio:** Cumple la Ley de Transparencia del GAMLP y el objetivo de participación ciudadana del Proyecto Basura 0, apuntando al KPI de 5 000 usuarios únicos mensuales en el primer trimestre. Cumple WCAG 2.1 AA.
 **RF asociado:** RF-08 | **Estimación:** 3 puntos | **Prioridad:** Must Have
-Link mockup:  https://www.figma.com/make/q9aZzew39qF7jf3B6kuWUk/Consulta-de-informaci%C3%B3n-ambiental?t=blDQs7fJ4NUN8uid-20&fullscreen=1
+**Link mockup:**     https://www.figma.com/make/q9aZzew39qF7jf3B6kuWUk/Consulta-de-informaci%C3%B3n-ambiental?t=blDQs7fJ4NUN8uid-20&fullscreen=1
 
 ---
 
