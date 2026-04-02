@@ -1,53 +1,53 @@
-# 🟢 SPRINT 1 – Autenticación
+# SPRINT 1 – Autenticación, roles, auditoría, CI/CD y Docker
 
-## 📅 Sprint Planning
+## Sprint Planning
 
 **Fecha:** 01/04/2026
 **Duración:** 7 días
 
-### 🎯 Objetivo:
+### Objetivo:
 
 Implementar autenticación básica del sistema.
 
-### 📌 Historias:
+### Historias:
 
 * HU-01.1 Login
 * HU-01.2 Registro
 
 ---
 
-## 👥 Distribución de tareas
+## Distribución de tareas
 
-### 👩‍💻 Backend (Eva)
+### Backend (Eva)
 
 * Crear proyecto FastAPI
 * Endpoint /login
 * Generar JWT
 
-### 👨‍💻 Base de Datos (Anel)
+### Base de Datos (Anel)
 
 * Tabla usuarios
 * Tabla roles
 * Relaciones
 
-### 👩‍💻 Frontend  (Esmeralda)
+### Frontend  (Esmeralda)
 
 * Formulario login
 * Formulario registro
 * Validaciones
 
-### 👨‍💻 DevOps (Daynor)
+### DevOps (Daynor)
 
 * Crear repositorio
 * Configurar Docker
 * CI/CD básico
 
-### 👩‍💼 QA (Génesis)
+### QA (Génesis)
 
 * Validar login
 * Documentar
 
-## 📅 Daily Scrum 1
+## Daily Scrum 1
 
 **Fecha:** 02/04/2026
 
@@ -61,7 +61,7 @@ Implementar autenticación básica del sistema.
 
 ---
 
-## 📅 Daily Scrum 2
+## Daily Scrum 2
 
 **Fecha:** 06/04/2026
 
@@ -75,13 +75,13 @@ Implementar autenticación básica del sistema.
 
 ---
 
-## 📅 Sprint Review
+## Sprint Review
 
 Login funcionando correctamente.
 
 ---
 
-## 📅 Retrospectiva
+## Retrospectiva
 
 ✔ Bien: trabajo en equipo
 ⚠ Mejorar: comunicación
