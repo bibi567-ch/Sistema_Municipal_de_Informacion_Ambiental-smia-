@@ -27,35 +27,63 @@ Implementar autenticación básica del sistema.
 
 ## Distribución de tareas
 
-### Backend (Eva)
+### 👩‍💻 Backend (Eva)
+Descripción: Desarrollo del backend y lógica de IA
 
-* Crear proyecto FastAPI
-* Endpoint /login
-* Generar JWT
+Subtareas:
+- Configurar proyecto (FastAPI / Firebase Functions)
+- Implementar endpoint /login
+- Integrar API de Gemini
+- Crear lógica de clasificación TRL
+- Manejar autenticación JWT
 
-### Base de Datos (Anel)
+---
 
-* Tabla usuarios
-* Tabla roles
-* Relaciones
+### 👨‍💻 Base de Datos (Anel)
+Descripción: Diseño y gestión de datos en Firebase
 
-### Frontend  (Esmeralda)
+Subtareas:
+- Crear colección usuarios
+- Crear colección proyectos
+- Definir estructura JSON (desde prompts)
+- Configurar reglas de seguridad (Firestore)
+- Validar relaciones de datos
 
-* Formulario login
-* Formulario registro
-* Validaciones
+---
 
-### DevOps (Daynor)
+### 👩‍💻 Frontend (Esmeralda)
+Descripción: Desarrollo de interfaz de usuario
 
-* Crear repositorio
-* Configurar Docker
-* CI/CD básico
+Subtareas:
+- Crear formulario login
+- Crear formulario registro
+- Diseñar dashboard (Tailwind)
+- Integrar botón “Analizar con IA”
+- Validaciones de formulario
 
-### QA (Génesis)
+---
 
-* Validar login
-* Documentar
+### 👨‍💻 DevOps (Daynor)
+Descripción: Infraestructura y despliegue
 
+Subtareas:
+- Crear repositorio en GitHub
+- Configurar Docker
+- Configurar CI/CD
+- Desplegar en Firebase Hosting
+- Automatizar builds
+
+---
+
+### 👩‍💼 QA (Génesis)
+Descripción: Validación y documentación
+
+Subtareas:
+- Probar login
+- Validar clasificación IA
+- Detectar errores
+- Documentar funcionalidades
+- Registrar pruebas
 ## Daily Scrum 1
 
 **Fecha:** 02/04/2026
