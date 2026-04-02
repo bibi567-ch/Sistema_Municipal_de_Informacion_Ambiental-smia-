@@ -90,26 +90,15 @@ El proyecto se distribuye en 6 Sprints de 2 semanas dentro de los 90 días de co
 
 ## 3. PLAN DE SPRINTS (AJUSTADO CON IA)
 
-| Sprint   | Días     | Historias incluidas | SP | Foco principal |
-|----------|----------|---------------------|----|----------------|
-| Sprint 1 | 1 – 14   | HU-01.1, HU-01.2, HU-02.1, HU-02.2, HU-03.1, RNF-01, DEV-01, DEV-02, DEV-03 | 21 | Autenticación, roles, auditoría, CI/CD y Docker |
-| Sprint 2 | 15 – 28  | HU-04.1, HU-04.2, HU-04.3, HU-04.4, HU-05.1, HU-05.2, RNF-02 | 25 | Monitoreo ambiental + modelado inteligente con IA (estructuras JSON y validación de datos) |
-| Sprint 3 | 29 – 42  | HU-04.5, HU-04.6, HU-05.3, HU-05.4, HU-05.5, HU-07.1, HU-07.2, HU-08.1, RNF-03 | 24 | Clasificación automática con IA, mapa unificado, portal ciudadano |
-| Sprint 4 | 43 – 56  | HU-05.6, HU-06.1, HU-07.3, HU-07.4, HU-07.5, HU-09.1, HU-10.1, HU-12.1 | 29 | Dashboard inteligente, indicadores automáticos, histórico y reportes con apoyo de IA |
-| Sprint 5 | 57 – 70  | HU-07.6, HU-11.1, HU-13.1, HU-14.1, HU-15.1, DEV-04 | 19 | Visualización avanzada, exportación, dashboard gerencial, pruebas de seguridad y optimización |
-| Sprint 6 | 71 – 90  | HU-16.1 | 4 | Cierre del proyecto, documentación, validación final, capacitación y transferencia tecnológica |
-| TOTAL    |          |                     | 122|                |
-
-## Ajuste con Prototipado IA
-
-Se incorporó el uso de herramientas de inteligencia artificial (Google AI Studio, Gemini y Firebase) en los sprints intermedios (Sprint 2, 3 y 4) con el objetivo de:
-
-- Optimizar el modelado de datos mediante generación automática de estructuras JSON
-- Implementar lógica inteligente para clasificación y análisis de datos ambientales
-- Mejorar la visualización mediante dashboards dinámicos
-- Validar el sistema de forma temprana mediante prototipos funcionales
-
-Este enfoque no altera la planificación original del proyecto, sino que la complementa, incrementando la eficiencia y el nivel de innovación del sistema.
+|**Sprint**|**Días**|**Historias incluidas**|**SP**|**Foco principal**|
+| :-: | :-: | :-: | :-: | :-: |
+|Sprint 1|1 – 14|HU-01.1, HU-01.2, HU-02.1, HU-02.2, HU-03.1, RNF-01, DEV-01, DEV-02, DEV-03|21|Autenticación, roles, auditoría, CI/CD y Docker|
+|Sprint 2|15 – 28|HU-04.1, HU-04.2, HU-04.3, HU-04.4, HU-05.1, HU-05.2, RNF-02|25|Monitoreo de aire, agua, residuos y ruido — carga de datos ICA y parámetros hídricos|
+|Sprint 3|29 – 42|HU-04.5, HU-04.6, HU-05.3, HU-05.4, HU-05.5, HU-07.1, HU-07.2, HU-08.1, RNF-03|24|Monitoreo vehicular, mapa unificado, portal ciudadano, reportes de aire y agua|
+|Sprint 4|43 – 56|HU-05.6, HU-06.1, HU-07.3, HU-07.4, HU-07.5, HU-09.1, HU-10.1, HU-12.1|29|Indicadores automáticos, histórico 5 años, integración SIGIR, reportes por área y solicitudes ciudadanas|
+|Sprint 5|57 – 70|HU-07.6, HU-11.1, HU-13.1, HU-14.1, HU-15.1, DEV-04|19|Gráficos estadísticos, exportación PDF/Excel, dashboard gerencial, imágenes y pentesting OWASP|
+|Sprint 6|71 – 90|HU-16.1 — Buffer de correcciones, documentación TIC 337, capacitación y acta de cierre|4|Cierre del proyecto, documentación ROADMAP móvil, transferencia tecnológica y capacitación|
+|**TOTAL**|||**122**||
 
 ## **4. RESUMEN DEL PRODUCT BACKLOG**
 
