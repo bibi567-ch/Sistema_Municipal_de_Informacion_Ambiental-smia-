@@ -13,6 +13,15 @@ Implementar autenticación básica del sistema.
 
 * HU-01.1 Login
 * HU-01.2 Registro
+* HU-01.1 Login
+* HU-01.2 Registro
+* HU-02.1 Crear Proyecto
+* HU-02.2 Ver Proyectos
+* HU-03.1 Clasificación TRL con IA
+* RNF-01 Seguridad de Datos
+* DEV-01 Configuración del Proyecto
+* DEV-02 Implementación Backend y Base de Datos
+* DEV-03 Integración de Inteligencia Artificial  
 
 ---
 
