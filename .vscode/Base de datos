@@ -1,0 +1,208 @@
+CREATE TABLE Usuarios (
+    id_usuario INT PRIMARY KEY IDENTITY,
+    nombre VARCHAR(100),
+    correo VARCHAR(100) UNIQUE,
+    password_hash VARCHAR(255),
+    estado BIT DEFAULT 1
+);
+select * from Usuarios
+
+CREATE TABLE Roles (
+    id_rol INT PRIMARY KEY IDENTITY,
+    nombre_rol VARCHAR(50) UNIQUE,
+    descripcion VARCHAR(200)
+);
+select * from Roles
+
+--relación usuario_rol--
+
+CREATE TABLE Usuario_Rol (
+    id_usuario INT,
+    id_rol INT,
+    PRIMARY KEY (id_usuario, id_rol),
+    FOREIGN KEY (id_usuario) REFERENCES Usuarios(id_usuario),
+    FOREIGN KEY (id_rol) REFERENCES Roles(id_rol)
+);
+select * from Usuario_Rol
+
+CREATE TABLE Permisos (
+    id_permiso INT PRIMARY KEY IDENTITY,
+    nombre_permiso VARCHAR(100),
+    descripcion VARCHAR(200)
+);
+select * from Permisos
+
+--relación rol_permiso--
+
+CREATE TABLE Rol_Permiso (
+    id_rol INT,
+    id_permiso INT,
+    PRIMARY KEY (id_rol, id_permiso),
+    FOREIGN KEY (id_rol) REFERENCES Roles(id_rol),
+    FOREIGN KEY (id_permiso) REFERENCES Permisos(id_permiso)
+);
+select * from Rol_Permiso
+
+CREATE TABLE Auditoria (
+    id_auditoria INT PRIMARY KEY IDENTITY,
+    id_usuario INT,
+    accion VARCHAR(200),
+    tabla_afectada VARCHAR(100),
+    fecha DATETIME DEFAULT GETDATE(),
+    FOREIGN KEY (id_usuario) REFERENCES Usuarios(id_usuario)
+);
+SELECT * FROM Auditoria
+
+INSERT INTO Roles (nombre_rol, descripcion) VALUES
+('ADMIN', 'Acceso total al sistema'),
+('TECNICO', 'Gestión de datos ambientales'),
+('CIUDADANO', 'Consulta de información pública');
+
+INSERT INTO Permisos (nombre_permiso, descripcion) VALUES
+('CREAR_USUARIO', 'Puede crear usuarios'),
+('EDITAR_USUARIO', 'Puede editar usuarios'),
+('ELIMINAR_USUARIO', 'Puede eliminar usuarios'),
+('VER_REPORTES', 'Puede ver reportes'),
+('EDITAR_DATOS', 'Puede modificar datos ambientales'),
+('VER_DATOS', 'Puede consultar datos'),
+('ADMINISTRAR_SISTEMA', 'Control total del sistema');
+
+--asignación de permisos a roles --
+
+-- ADMIN (todos los permisos) --
+INSERT INTO Rol_Permiso
+SELECT r.id_rol, p.id_permiso
+FROM Roles r, Permisos p
+WHERE r.nombre_rol = 'ADMIN';
+GO
+
+-- TECNICO --
+INSERT INTO Rol_Permiso (id_rol, id_permiso)
+SELECT r.id_rol, p.id_permiso
+FROM Roles r
+JOIN Permisos p ON p.nombre_permiso IN ('VER_DATOS', 'EDITAR_DATOS', 'VER_REPORTES')
+WHERE r.nombre_rol = 'TECNICO';
+GO
+
+-- CIUDADANO --
+INSERT INTO Rol_Permiso (id_rol, id_permiso)
+SELECT r.id_rol, p.id_permiso
+FROM Roles r
+JOIN Permisos p ON p.nombre_permiso IN ('VER_DATOS')
+WHERE r.nombre_rol = 'CIUDADANO';
+GO
+
+-- usuarios de prueba --
+
+INSERT INTO Usuarios (nombre, correo, password_hash) VALUES
+('Admin Genesis', 'admin@smia.com', 'HASH123'),
+('Tecnico Eva', 'tecnico@smia.com', 'HASH456'),
+('Tecnico Anel', 'tecnico2@smia.com', 'HASH789'),
+('Tecnico Esmeralda', 'tecnico3@smia.com', 'HASH111'),
+('Ciudadano Daynor', 'ciudadano@smia.com', 'HASH222');
+GO
+
+-- asignar roles a usuarios --
+
+-- ADMIN
+--Genesis
+INSERT INTO Usuario_Rol
+SELECT u.id_usuario, r.id_rol
+FROM Usuarios u, Roles r
+WHERE u.correo = 'admin@smia.com'
+AND r.nombre_rol = 'ADMIN';
+
+-- TECNICOS
+--Eva
+INSERT INTO Usuario_Rol
+SELECT u.id_usuario, r.id_rol
+FROM Usuarios u, Roles r
+WHERE u.correo = 'tecnico@smia.com'
+AND r.nombre_rol = 'TECNICO';
+
+-- Anel
+INSERT INTO Usuario_Rol
+SELECT u.id_usuario, r.id_rol
+FROM Usuarios u, Roles r
+WHERE u.correo = 'tecnico2@smia.com'
+AND r.nombre_rol = 'TECNICO';
+
+-- Esmeralda
+INSERT INTO Usuario_Rol
+SELECT u.id_usuario, r.id_rol
+FROM Usuarios u, Roles r
+WHERE u.correo = 'tecnico3@smia.com'
+AND r.nombre_rol = 'TECNICO';
+
+
+-- CIUDADANO
+--Daynor
+INSERT INTO Usuario_Rol
+SELECT u.id_usuario, r.id_rol
+FROM Usuarios u, Roles r
+WHERE u.correo = 'ciudadano@smia.com'
+AND r.nombre_rol = 'CIUDADANO';
+
+SELECT u.nombre, r.nombre_rol
+FROM Usuarios u
+JOIN Usuario_Rol ur ON u.id_usuario = ur.id_usuario
+JOIN Roles r ON ur.id_rol = r.id_rol
+WHERE r.nombre_rol = 'TECNICO';
+
+--registrar auditoria--
+
+CREATE PROCEDURE sp_registrar_auditoria
+    @id_usuario INT,
+    @accion VARCHAR(200),
+    @tabla VARCHAR(100)
+AS
+BEGIN
+    INSERT INTO Auditoria (id_usuario, accion, tabla_afectada)
+    VALUES (@id_usuario, @accion, @tabla);
+END;
+
+--verificar permisos--
+
+CREATE PROCEDURE sp_verificar_permiso
+    @id_usuario INT,
+    @permiso VARCHAR(100)
+AS
+BEGIN
+    SELECT p.nombre_permiso
+    FROM Usuarios u
+    JOIN Usuario_Rol ur ON u.id_usuario = ur.id_usuario
+    JOIN Roles r ON ur.id_rol = r.id_rol
+    JOIN Rol_Permiso rp ON r.id_rol = rp.id_rol
+    JOIN Permisos p ON rp.id_permiso = p.id_permiso
+    WHERE u.id_usuario = @id_usuario
+    AND p.nombre_permiso = @permiso;
+END;
+
+--Pruebas--
+
+-- Ver permisos de un usuario
+EXEC sp_verificar_permiso 1, 'ADMINISTRAR_SISTEMA'; -- ADMIN
+EXEC sp_verificar_permiso 2, 'ADMINISTRAR_SISTEMA'; -- TECNICO (NO debería devolver)
+GO
+
+-- Registrar auditoría
+EXEC sp_registrar_auditoria 1, 'Creó un usuario', 'Usuarios';
+GO
+
+--consultas--
+
+-- Ver usuarios con roles
+SELECT u.nombre, r.nombre_rol
+FROM Usuarios u
+JOIN Usuario_Rol ur ON u.id_usuario = ur.id_usuario
+JOIN Roles r ON ur.id_rol = r.id_rol;
+
+-- Ver roles con permisos
+SELECT r.nombre_rol, p.nombre_permiso
+FROM Roles r
+JOIN Rol_Permiso rp ON r.id_rol = rp.id_rol
+JOIN Permisos p ON rp.id_permiso = p.id_permiso;
+
+-- Ver auditoría
+SELECT * FROM Auditoria;
+GO
