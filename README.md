@@ -25,6 +25,21 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+## 🚀 Guía de Inicio Rápido
+
+### Requisitos Previos
+1. Tener instalado [Docker Desktop](https://www.docker.com/products/docker-desktop/).
+2. Asegurarse de que el motor de Docker esté corriendo.
+
+### Instalación y Despliegue
+1. Clona el repositorio.
+2. Configura el archivo de variables de entorno:
+   - Crea un archivo `.env` dentro de la carpeta `/backend`.
+   - Agrega las credenciales de la base de datos (solicitar al encargado de seguridad).
+3. Levanta todos los servicios con un solo comando:
+   ```bash
+   docker-compose up --build
 # Sistema Municipal de Información Ambiental (SMIA)
 
 ## 📋 Información del Proyecto
