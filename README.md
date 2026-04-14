@@ -17,7 +17,7 @@ El **SMIA** es una plataforma integral diseñada para el Gobierno Autónomo Muni
 El sistema se estructura en 4 módulos principales que interactúan con actores internos (Técnicos/Administradores) y externos (Ciudadanía y Sistemas Nacionales).
 
 ### 📊 Diagrama de Casos de Uso
-![Diagrama de Casos de Uso](https://raw.githubusercontent.com/bibi567-ch/Sistema_Municipal_de_Informacion_Ambiental-smia-/main/SMIA_CasosDeUso_Lucidchart%20(2).png)
+![Diagrama de Casos de Uso](smia_Diagrama).png
 
 ###  Desglose de Operaciones por Actor
 | Actor | Responsabilidades Clave |
