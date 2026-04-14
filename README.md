@@ -19,7 +19,7 @@ El sistema se estructura en 4 módulos principales que interactúan con actores 
 ### 📊 Diagrama de Casos de Uso
 > **Instrucciones:** Para visualizar el diagrama, asegúrate de que el archivo `SMIA_CasosDeUso_Lucidchart (2).png` esté en la carpeta raíz.
 
-![Diagrama de Casos de Uso](SMIA_CasosDeUso_Lucidchart (2).png)
+![Diagrama de Casos de Uso](SMIA_CasosDeUso_Lucidchart (2)).png)
 
 ###  Desglose de Operaciones por Actor
 | Actor | Responsabilidades Clave |
