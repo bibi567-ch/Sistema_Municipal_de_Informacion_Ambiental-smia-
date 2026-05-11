@@ -95,4 +95,4 @@ Se creará un docker-compose.yml que levantará 3 contenedores:
 Contenedor de Node/Nginx sirviendo Angular.
 Contenedor de Python/Gunicorn sirviendo Django.
 Contenedor de PostgreSQL/PostGIS.
-Ventaja: Garantiza que si el sistema funciona en la computadora de los desarrolladores, funcionará exactamente igual en los servidores del GAMLP.
+Ventaja: Garantiza que si el sistema funciona en la computadora de los desarrolladores, funcionará exactamente igual en los servidores del GAMLP
