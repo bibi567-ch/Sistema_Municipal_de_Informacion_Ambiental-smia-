@@ -1,251 +1,167 @@
-CRONOGRAMA BASADO EN 90 DIAS
+# 📅 Plan de Proyecto – Sistema de Monitoreo Ambiental  
+**Cronograma basado en 90 días** | Inicio: 01/04/2026 | Fin: 29/06/2026  
+**Equipo 2** – 5 integrantes  
 
-Etapa	Días	Actividades
-Inicio	1-5	Planificación y levantamiento
-Análisis	6-15	ERS y requerimientos
-Diseño	16-30	BD, arquitectura, UI
-Desarrollo	31-70	Backend + Frontend
-Testing	50-80	QA y validaciones
-Despliegue	75-85	Producción
-Capacitación	86-90	Transferencia
+---
 
-ROLES SCRUM
+##  Tabla de Contenidos
+1. [Etapas del Proyecto](#etapas-del-proyecto)
+2. [Roles Scrum](#roles-scrum)
+3. [Sprints – Vista General](#sprints--vista-general)
+4. [Plan Detallado de Sprints](#plan-detallado-de-sprints)
+   - [Sprint 1](#sprint-1-0604--19042026)
+   - [Sprint 2](#sprint-2-2004--03052026)
+   - [Sprint 3](#sprint-3-0405--17052026)
+   - [Sprint 4](#sprint-4-1805--31052026)
+   - [Sprint 5](#sprint-5-0106--14062026)
+   - [Sprint 6](#sprint-6-1506--29062026)
+5. [Prioridades por Sprint (Story Points)](#prioridades-por-sprint-story-points)
 
-Rol	Responsable
-Scrum Master	Anel Kahori Quiroz Crespo
-Product Owner	Genesis Sarai Apaza Quispe
-Development Team	Eva, Esmeralda, Daynor
+---
 
-SPRINTS
+##  Etapas del Proyecto
 
-Sprint	Días	Historias incluidas	SP	Foco principal
-Sprint 1	1 – 14	HU-01.1, HU-01.2, HU-02.1, HU-02.2, HU-03.1, RNF-01, DEV-01, DEV-02, DEV-03	21	Autenticación, roles, auditoría, CI/CD y Docker
-Sprint 2	15 – 28	HU-04.1, HU-04.2, HU-04.3, HU-04.4, HU-05.1, HU-05.2, RNF-02	25	Monitoreo de aire, agua, residuos y ruido — carga de datos ICA y parámetros hídricos
-Sprint 3	29 – 42	HU-04.5, HU-04.6, HU-05.3, HU-05.4, HU-05.5, HU-07.1, HU-07.2, HU-08.1, RNF-03	24	Monitoreo vehicular, mapa unificado, portal ciudadano, reportes de aire y agua
-Sprint 4	43 – 56	HU-05.6, HU-06.1, HU-07.3, HU-07.4, HU-07.5, HU-09.1, HU-10.1, HU-12.1	29	Indicadores automáticos, histórico 5 años, integración SIGIR, reportes por área y solicitudes ciudadanas
-Sprint 5	57 – 70	HU-07.6, HU-11.1, HU-13.1, HU-14.1, HU-15.1, DEV-04	19	Gráficos estadísticos, exportación PDF/Excel, dashboard gerencial, imágenes y pentesting OWASP
-Sprint 6	71 – 90	HU-16.1 — Buffer de correcciones, documentación TIC 337, capacitación y acta de cierre	4	Cierre del proyecto, documentación ROADMAP móvil, transferencia tecnológica y capacitación
-TOTAL			122	
-PLAN COMPLETO DE SPRINTS (TAREAS, SUBTAREAS, RESPONSABLES Y FECHAS)
-Inicio del proyecto: 01/04/2026
-Equipo 2 (5 integrantes):
-●	Eva – Backend
-●	Anel – Scrum Master - Base de Datos
-●	Esmeralda – Frontend
-●	Daynor – DevOps
-●	Génesis – QA 
-SPRINT 1 (06/04 – 19/04/2026)
-TAREA: Autenticación (HU-01.1, HU-01.2)
-Eva
-06/04 – 15/04
-Subtareas:
-●	Endpoint login
-●	Validación credenciales
-●	JWT
-●	Endpoint registro
-●	Pruebas
-TAREA: Roles y permisos (HU-02.1, HU-02.2)
-Anel
-06/04 – 15/04
-Subtareas:
-●	Tabla roles
-●	Relación usuario-rol
-●	Validación permisos
-●	Pruebas
-TAREA: Auditoría (HU-03.1)
-Génesis
-08/04 – 17/04
-Subtareas:
-●	Definir eventos
-●	Logs
-●	Registro acciones
-●	Validación
-TAREA: Infraestructura (RNF-01, DEV-01, DEV-02, DEV-03)
-Daynor
-06/04 – 13/04
-Subtareas:
-●	Repositorio
-●	CI/CD
-●	Docker
-●	Seguridad básica
-TAREA: Interfaz
-Esmeralda
-07/04 – 16/04
-Subtareas:
-●	UI login
-●	UI registro
-●	Validaciones
-TAREA: ENTREGA SPRINT 1
-Génesis
-17/04 – 19/04
-Subtareas:
-●	Pruebas finales
-●	Validación HU
-●	Documentación
-●	Demo
-●	Entrega
-SPRINT 2 (20/04 – 03/05/2026)
-TAREA: Backend ambiental (HU-04.1, HU-04.3)
-Eva
-20/04 – 30/04
-Subtareas:
-●	Endpoint aire
-●	Endpoint agua
-●	Validaciones
-●	Persistencia
-TAREA: Base de datos (HU-04.2, HU-04.4)
-Anel
-20/04 – 28/04
-Subtareas:
-●	Modelo ICA
-●	Parámetros hídricos
-●	Optimización
-TAREA: Interfaz registro (HU-05.1, HU-05.2)
-Esmeralda
-20/04 – 29/04
-Subtareas:
-●	Formulario residuos
-●	Formulario ruido
-●	Validaciones
-TAREA: Rendimiento (RNF-02)
-Daynor
-23/04 – 02/05
-Subtareas:
-●	Optimización consultas
-●	Pruebas carga
-TAREA: QA
-Génesis
-25/04 – 03/05
-Subtareas:
-●	Pruebas funcionales
-●	Validación datos
-TAREA: ENTREGA SPRINT 2
-Génesis
-01/05 – 03/05
-Subtareas:
-●	Validación HU
-●	Documentación
-●	Demo
-●	Entrega
-SPRINT 3 (04/05 – 17/05/2026)
-TAREA: Backend integración (HU-04.5, HU-04.6)
-Eva
-04/05 – 14/05
-Subtareas:
-●	Endpoint vehicular
-●	Integración APIs
-TAREA: Consultas
-Esmeralda
-08/05 – 15/05
-Subtareas:
-●	Vista aire
-●	Vista agua
-●	Filtros
-TAREA: Base de datos
-Anel
-04/05 – 12/05
-Subtareas:
-●	Datos geográficos
-●	Consultas
-TAREA: Mapa (HU-07)
-Esmeralda
-04/05 – 16/05
-Subtareas:
-●	Integración mapa
-●	Visualización
-TAREA: Rendimiento (RNF-03)
-Daynor
-09/05 – 15/05
-Subtareas:
-●	Optimización
-TAREA: QA
-Génesis
-10/05 – 17/05
-Subtareas:
-●	Pruebas integración
-TAREA: ENTREGA SPRINT 3
-Génesis
-15/05 – 17/05
-Subtareas:
-●	Validación
-●	Demo
-●	Entrega
-CONCLUSIÓN
-El plan organiza tareas y subtareas por sprint, asignando responsables y fechas, garantizando trazabilidad con las historias de usuario.
-SPRINT 1
-Autenticación
- Urgente — 8 puntos
-Roles y permisos
- Alta — 5 puntos
-Auditoría
- Normal — 3 puntos
-Infraestructura (CI/CD, Docker)
- Urgente — 8 puntos
-Interfaz (login/registro)
- Alta — 3 puntos
-Entrega Sprint 1
- Urgente — 2 puntos
-SPRINT 2
-Backend ambiental (aire/agua)
- Urgente — 8 puntos
-Base de datos (ICA, hídrico)
- Alta — 5 puntos
-Interfaz registro
- Normal — 3 puntos
-Rendimiento
- Normal — 5 puntos
-QA
-Alta — 3 puntos
-Entrega Sprint 2
-Urgente — 2 puntos
-SPRINT 3
-Backend integración APIs
- Urgente — 8 puntos
-Consultas (frontend)
- Normal — 3 puntos
-Base de datos geográfica
- Alta — 5 puntos
-Mapa (visualización)
- Normal — 5 puntos
-Rendimiento
- Normal — 3 puntos
-QA integración
- Alta — 5 puntos
-Entrega Sprint 3
- Urgente — 2 puntos
-SPRINT 4
-Indicadores automáticos
-Alta — 5 puntos
-Reportes + histórico
-Urgente — 8 puntos
-Interfaz reportes
-Normal — 3 puntos
-Infraestructura optimización
-Normal — 3 puntos
-QA
-Alta — 3 puntos
-Entrega Sprint 4
-Urgente — 2 puntos
-SPRINT 5
-Dashboard
-Normal — 5 puntos
-Backend reportes (PDF)
-Alta — 5 puntos
-Datos (Excel, consultas)
-Normal — 3 puntos
-Seguridad (OWASP)
- Urgente — 8 puntos
-QA testing
-Alta — 5 puntos
-Entrega Sprint 5
-Urgente — 2 puntos
-SPRINT 6
-Correcciones (fix)
-Urgente — 5 puntos
-Documentación
-Alta — 3 puntos
-Despliegue producción
-Urgente — 5 puntos
-Entrega final
-Urgente — 2 puntos
+| Etapa          | Días      | Actividades                                      |
+|----------------|-----------|--------------------------------------------------|
+| Inicio         | 1 – 5     | Planificación y levantamiento                   |
+| Análisis       | 6 – 15    | ERS y requerimientos                            |
+| Diseño         | 16 – 30   | BD, arquitectura, UI                            |
+| Desarrollo     | 31 – 70   | Backend + Frontend                              |
+| Testing        | 50 – 80   | QA y validaciones                               |
+| Despliegue     | 75 – 85   | Producción                                      |
+| Capacitación   | 86 – 90   | Transferencia                                   |
 
+---
+
+##  Roles Scrum
+
+| Rol                | Responsable                          |
+|--------------------|--------------------------------------|
+| Scrum Master       | Anel Kahori Quiroz Crespo            |
+| Product Owner      | Genesis Sarai Apaza Quispe           |
+| Development Team   | Eva (Backend), Esmeralda (Frontend), Daynor (DevOps) |
+
+---
+
+##  Sprints – Vista General
+
+| Sprint     | Días           | Historias de Usuario / Tareas Incluidas | SP  | Foco principal |
+|------------|----------------|------------------------------------------|-----|----------------|
+| **Sprint 1** | 01/04 – 14/04  | HU-01.1, HU-01.2, HU-02.1, HU-02.2, HU-03.1, RNF-01, DEV-01, DEV-02, DEV-03 | 21  | Autenticación, roles, auditoría, CI/CD y Docker |
+| **Sprint 2** | 15/04 – 28/04  | HU-04.1, HU-04.2, HU-04.3, HU-04.4, HU-05.1, HU-05.2, RNF-02 | 25  | Monitoreo de aire, agua, residuos y ruido — carga de datos ICA |
+| **Sprint 3** | 29/04 – 12/05  | HU-04.5, HU-04.6, HU-05.3, HU-05.4, HU-05.5, HU-07.1, HU-07.2, HU-08.1, RNF-03 | 24  | Monitoreo vehicular, mapa unificado, portal ciudadano |
+| **Sprint 4** | 13/05 – 26/05  | HU-05.6, HU-06.1, HU-07.3, HU-07.4, HU-07.5, HU-09.1, HU-10.1, HU-12.1 | 29  | Indicadores automáticos, histórico 5 años, integración SIGIR |
+| **Sprint 5** | 27/05 – 09/06  | HU-07.6, HU-11.1, HU-13.1, HU-14.1, HU-15.1, DEV-04 | 19  | Gráficos estadísticos, exportación PDF/Excel, dashboard gerencial |
+| **Sprint 6** | 10/06 – 29/06  | HU-16.1, buffer correcciones, documentación TIC 337, capacitación, acta de cierre | 4   | Cierre del proyecto, roadmap móvil, transferencia tecnológica |
+
+> **Total Story Points:** 122
+
+---
+
+##  Plan Detallado de Sprints
+
+### Sprint 1 (06/04 – 19/04/2026)
+
+| Tarea                          | Responsable | Fechas         | Subtareas |
+|--------------------------------|-------------|----------------|-----------|
+| Autenticación (HU-01.1, HU-01.2) | Eva         | 06/04 – 15/04  | Endpoint login, validación credenciales, JWT, endpoint registro, pruebas |
+| Roles y permisos (HU-02.1, HU-02.2) | Anel     | 06/04 – 15/04  | Tabla roles, relación usuario-rol, validación permisos, pruebas |
+| Auditoría (HU-03.1)            | Génesis     | 08/04 – 17/04  | Definir eventos, logs, registro acciones, validación |
+| Infraestructura (RNF-01, DEV-01/02/03) | Daynor | 06/04 – 13/04 | Repositorio, CI/CD, Docker, seguridad básica |
+| Interfaz (login/registro)      | Esmeralda   | 07/04 – 16/04  | UI login, UI registro, validaciones |
+| **Entrega Sprint 1**           | Génesis     | 17/04 – 19/04  | Pruebas finales, validación HU, documentación, demo |
+
+---
+
+### Sprint 2 (20/04 – 03/05/2026)
+
+| Tarea                                | Responsable | Fechas         | Subtareas |
+|--------------------------------------|-------------|----------------|-----------|
+| Backend ambiental (HU-04.1, HU-04.3) | Eva         | 20/04 – 30/04  | Endpoint aire, endpoint agua, validaciones, persistencia |
+| Base de datos (HU-04.2, HU-04.4)     | Anel        | 20/04 – 28/04  | Modelo ICA, parámetros hídricos, optimización |
+| Interfaz registro (HU-05.1, HU-05.2) | Esmeralda   | 20/04 – 29/04  | Formulario residuos, formulario ruido, validaciones |
+| Rendimiento (RNF-02)                 | Daynor      | 23/04 – 02/05  | Optimización consultas, pruebas de carga |
+| QA funcional                         | Génesis     | 25/04 – 03/05  | Pruebas funcionales, validación de datos |
+| **Entrega Sprint 2**                 | Génesis     | 01/05 – 03/05  | Validación HU, documentación, demo |
+
+---
+
+### Sprint 3 (04/05 – 17/05/2026)
+
+| Tarea                                      | Responsable | Fechas         | Subtareas |
+|--------------------------------------------|-------------|----------------|-----------|
+| Backend integración (HU-04.5, HU-04.6)     | Eva         | 04/05 – 14/05  | Endpoint vehicular, integración de APIs |
+| Consultas frontend                         | Esmeralda   | 08/05 – 15/05  | Vista aire, vista agua, filtros |
+| Base de datos geográfica (HU-07)           | Anel        | 04/05 – 12/05  | Datos geográficos, consultas espaciales |
+| Mapa unificado (HU-07.1, HU-07.2)          | Esmeralda   | 04/05 – 16/05  | Integración de mapa, visualización |
+| Rendimiento (RNF-03)                       | Daynor      | 09/05 – 15/05  | Optimización de consultas geográficas |
+| QA integración                             | Génesis     | 10/05 – 17/05  | Pruebas de integración |
+| **Entrega Sprint 3**                       | Génesis     | 15/05 – 17/05  | Validación, demo, entrega |
+
+---
+
+### Sprint 4 (18/05 – 31/05/2026)
+
+*Basado en HU-05.6, HU-06.1, HU-07.3, HU-07.4, HU-07.5, HU-09.1, HU-10.1, HU-12.1*
+
+| Tarea                                        | Responsable | Fechas         | Subtareas |
+|----------------------------------------------|-------------|----------------|-----------|
+| Indicadores automáticos (HU-06.1)            | Eva         | 18/05 – 25/05  | Cálculo de ICA automático, umbrales |
+| Histórico 5 años (HU-09.1)                  | Anel        | 18/05 – 26/05  | Migración de datos históricos, consultas |
+| Integración SIGIR (HU-10.1)                 | Eva         | 22/05 – 28/05  | Endpoints de integración, validación |
+| Reportes por área (HU-05.6, HU-07.5)        | Esmeralda   | 20/05 – 29/05  | Filtros por zona geográfica, UI reportes |
+| Solicitudes ciudadanas (HU-12.1)            | Esmeralda   | 23/05 – 30/05  | Formulario de solicitudes, bandeja de entrada |
+| QA y pruebas de rendimiento                  | Génesis     | 25/05 – 31/05  | Pruebas de integración con SIGIR, validación histórica |
+| **Entrega Sprint 4**                         | Génesis     | 30/05 – 31/05  | Demo, documentación, cierre |
+
+---
+
+### Sprint 5 (01/06 – 14/06/2026)
+
+*Basado en HU-07.6, HU-11.1, HU-13.1, HU-14.1, HU-15.1, DEV-04*
+
+| Tarea                                          | Responsable | Fechas         | Subtareas |
+|------------------------------------------------|-------------|----------------|-----------|
+| Dashboard gerencial (HU-13.1)                 | Esmeralda   | 01/06 – 08/06  | KPIs, gráficos interactivos, filtros |
+| Gráficos estadísticos (HU-07.6)               | Eva         | 01/06 – 09/06  | Endpoints para datos estadísticos, tendencias |
+| Exportación PDF/Excel (HU-11.1)               | Eva         | 05/06 – 11/06  | Generación de reportes descargables |
+| Imágenes / adjuntos (HU-14.1)                 | Anel        | 04/06 – 10/06  | Almacenamiento de imágenes, asociación a reportes |
+| Pentesting OWASP (DEV-04)                     | Daynor      | 08/06 – 13/06  | Análisis de vulnerabilidades, correcciones |
+| QA de seguridad y funcional                    | Génesis     | 10/06 – 14/06  | Pruebas de penetración, validación de exportación |
+| **Entrega Sprint 5**                           | Génesis     | 13/06 – 14/06  | Demo final funcional, documentación técnica |
+
+---
+
+### Sprint 6 (15/06 – 29/06/2026)
+
+*Cierre del proyecto: buffer de correcciones, documentación, capacitación y entrega final*
+
+| Tarea                                          | Responsable | Fechas         | Subtareas |
+|------------------------------------------------|-------------|----------------|-----------|
+| Buffer de correcciones (HU-16.1)              | Equipo      | 15/06 – 22/06  | Corrección de bugs críticos, mejoras de última hora |
+| Documentación TIC 337                         | Anel        | 20/06 – 25/06  | Manual de usuario, técnica, guía de despliegue |
+| Despliegue en producción                      | Daynor      | 23/06 – 26/06  | Configuración servidor, certificados, backups |
+| Capacitación y transferencia tecnológica      | Todos       | 26/06 – 28/06  | Entrenamiento a operadores, entrega de credenciales |
+| Acta de cierre y roadmap móvil                | Génesis     | 28/06 – 29/06  | Elaboración de acta, presentación de roadmap |
+| **Entrega Final**                              | Product Owner| 29/06/2026    | Revisión final, aceptación del producto |
+
+---
+
+##  Prioridades por Sprint (Story Points)
+
+| Sprint     | Tareas principales                          | Prioridad | SP |
+|------------|----------------------------------------------|-----------|----|
+| **Sprint 1** | Autenticación, Roles, Infraestructura        | Urgente   | 21 |
+| **Sprint 2** | Backend ambiental, BD, Rendimiento           | Urgente   | 25 |
+| **Sprint 3** | Integración APIs, Mapa, QA                   | Urgente   | 24 |
+| **Sprint 4** | Indicadores, Histórico, SIGIR, Solicitudes   | Alta      | 29 |
+| **Sprint 5** | Dashboard, Exportación, Seguridad (OWASP)    | Urgente   | 19 |
+| **Sprint 6** | Correcciones, Documentación, Despliegue      | Urgente   | 4  |
+
+---
+
+##  Conclusión
+
+El plan organiza en **6 sprints** todas las tareas y subtareas necesarias para completar el sistema de monitoreo ambiental en 90 días. Cada sprint asigna responsables, fechas y está alineado con las historias de usuario y requerimientos no funcionales. El equipo cuenta con perfiles claros (Backend, Frontend, DevOps, QA, Scrum Master), garantizando trazabilidad y entregas incrementales de valor.
+
+> 📌 **Nota:** Las fechas están calculadas a partir del inicio real del desarrollo (06/04/2026). El sprint 6 incluye un buffer de correcciones para asegurar la calidad final antes de la capacitación y cierre.
