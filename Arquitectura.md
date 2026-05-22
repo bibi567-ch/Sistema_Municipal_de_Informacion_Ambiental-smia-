@@ -1,4 +1,4 @@
-# **Blueprint Arquitectónico: Proyecto SMIA**
+# ** Proyecto SMIA**
 
 **Ecosistema Desacoplado: Frontend (Angular) \+ Backend (API REST con Django)**
 
