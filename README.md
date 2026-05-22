@@ -18,7 +18,7 @@ El **SMIA** es una plataforma integral diseñada para el Gobierno Autónomo Muni
 
 ---
 
-## 🏗️ Arquitectura del Sistema
+##  Arquitectura del Sistema
 
 El sistema utiliza una arquitectura **Cliente-Servidor Desacoplada**:
 
@@ -29,16 +29,7 @@ El sistema utiliza una arquitectura **Cliente-Servidor Desacoplada**:
 
 ---
 
-## 🎨 Diseño UI/UX y Prototipos
-
-Como parte del desarrollo centrado en el usuario (ciudadanos y técnicos de campo), se han diseñado interfaces de alta fidelidad:
-* 🔐 [Mockup de Autenticación Segura (JWT)](https://www.figma.com/make/tKBYxgLWHbF4HgmaEIKjuD/Secure-Login-with-JWT?t=kML16D12bqdJgUJx-20&fullscreen=1&preview-route=%2Fdashboard)
-* 📊 [Mockup de Generación de Reportes](https://www.figma.com/make/JyabLSV7yYMC06s2rfGVih/Generar-reportes-de-calidad?t=2iQ4JZxE2z1OOko8-20&fullscreen=1)
-* 🌍 [Mockup de Consulta Pública Ambiental](https://www.figma.com/make/q9aZzew39qF7jf3B6kuWUk/Consulta-de-informaci%C3%B3n-ambiental?t=blDQs7fJ4NUN8uid-20&fullscreen=1)
-
----
-
-## ⚙️ Especificaciones Técnicas (RF & RNF)
+##  Especificaciones Técnicas (RF & RNF)
 
 ### Requerimientos Críticos (Must Have)
 - **Seguridad:** Autenticación robusta con JWT, hashing de contraseñas (`bcrypt`/`Argon2id`) y bloqueo de seguridad (RF-01, RNF-01).
@@ -52,7 +43,7 @@ Como parte del desarrollo centrado en el usuario (ciudadanos y técnicos de camp
 
 ---
 
-## 🗺️ Diagrama de Casos de Uso y Actores
+##  Diagrama de Casos de Uso y Actores
 
 ![Diagrama de Casos de Uso](https://raw.githubusercontent.com/bibi567-ch/Sistema_Municipal_de_Informacion_Ambiental-smia-/main/smia_Diagrama.png)
 
