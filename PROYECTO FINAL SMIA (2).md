@@ -9,23 +9,231 @@ Integrantes:  Esmeralda Alegre Mamani
 	         Anel Kahori Quiroz Crespo  
                       Melaidy Bazualdo Mariscal
 
-# **CAPÍTULO I**
+**INDICE**
 
-# 1.Introducción y Contexto del Proyecto 
+**[CAPÍTULO I	5](#capítulo-i)**
 
-### 1.1. Antecedentes (TDR GAMLP — Proyecto Basura 0\) 
+[**1.Introducción y Contexto del Proyecto	5**](#1.introducción-y-contexto-del-proyecto)
+
+[1.1. Antecedentes (TDR GAMLP — Proyecto Basura 0\)	5](#1.1.-antecedentes-\(tdr-gamlp-—-proyecto-basura-0\))
+
+[1.2 Problema de Negocio	5](#1.2-problema-de-negocio)
+
+[1.3 Objetivo Principal	6](#1.3-objetivo-principal)
+
+[Diseñar, desarrollar e implementar el Sistema Municipal de Información Ambiental (SMIA) para el Gobierno Autónomo Municipal de La Paz, que permita registrar, almacenar, actualizar, gestionar y publicar información ambiental de uso institucional para funcionarios de la SMGA y de acceso público para la ciudadanía, asegurando la integración con el SIGIR nacional y el cumplimiento de la Ley N°755, en un plazo de 90 días calendario dentro del presupuesto aprobado de Bs. 208.800.	6](#diseñar,-desarrollar-e-implementar-el-sistema-municipal-de-información-ambiental-\(smia\)-para-el-gobierno-autónomo-municipal-de-la-paz,-que-permita-registrar,-almacenar,-actualizar,-gestionar-y-publicar-información-ambiental-de-uso-institucional-para-funcionarios-de-la-smga-y-de-acceso-público-para-la-ciudadanía,-asegurando-la-integración-con-el-sigir-nacional-y-el-cumplimiento-de-la-ley-n°755,-en-un-plazo-de-90-días-calendario-dentro-del-presupuesto-aprobado-de-bs.-208.800.)
+
+[2\. DEFINICIÓN DEL PARADIGMA METODOLÓGICO	6](#heading=)
+
+[3\. ACTA DE CONSTITUCIÓN DEL PROYECTO (PROJECT CHARTER)	6](#heading=)
+
+[3.1. Identificación General del Proyecto	6](#heading=)
+
+[3.2. Objetivo General	7](#heading=)
+
+[3.3. Objetivos Específicos e Indicadores (KPIs de Valor)	7](#heading=)
+
+[3.4. Justificación del Proyecto (Business Case)	8](#heading=)
+
+[3.5. Stakeholders Principales (Interesados)	8](#heading=)
+
+[3.6. Riesgos Críticos Identificados (Alto Nivel)	9](#heading=)
+
+[3.7. Criterios de Éxito del Proyecto y Aceptación	10](#heading=)
+
+[3.8. Aprobación del Proyecto	11](#heading=)
+
+[4\. ELICITACIÓN DE REQUISITOS Y TRAZABILIDAD	12](#heading=)
+
+[5\. PLAN DE GESTIÓN DEL ALCANCE	12](#heading=)
+
+[5.1. Inclusiones Principales (Alcance del Trabajo)	12](#heading=)
+
+[5.2. Módulos del Sistema (Funcionalidad Core)	12](#heading=)
+
+[5.3. Usuarios del Sistema y Permisos Generales	13](#heading=)
+
+[6\. PLAN DE GESTIÓN DEL TIEMPO Y DEL CRONOGRAMA	13](#heading=)
+
+[6.1 Enfoque de Planificación (Time-Boxing y Fast-Tracking)	13](#heading=)
+
+[6.2. Cronograma General de Actividades y Paquetes de Trabajo	14](#heading=)
+
+[6.3. Hitos Principales del Proyecto (Milestones) y Puntos de Decisión	21](#heading=)
+
+[6.4. Control de la Planificación y Métricas	22](#heading=)
+
+[7\. GESTIÓN FINANCIERA Y DE COSTOS	22](#heading=)
+
+[7.1. Fundamento del Presupuesto	22](#heading=)
+
+[7.2. Esquema de Pagos Contractuales	23](#heading=)
+
+[7.3. Desglose del Presupuesto por Componente de Costo (CBS)	24](#heading=)
+
+[7.4. Distribución del Presupuesto por Informe de Entrega	29](#heading=)
+
+[7.5. Indicadores de Valor Ganado (EVM) — Proyección al Cierre	30](#heading=)
+
+[7.6. Multas y Penalidades	31](#heading=)
+
+[7.7. Control de Cambios con Impacto Presupuestario	31](#heading=)
+
+[7.8. Propiedad de los Productos Financiados	31](#heading=)
+
+[8\. PLANIFICACIÓN DE GESTIÓN DE RECURSOS	32](#heading=)
+
+[8.1. Planificación de Recursos y Estrategia	32](#heading=)
+
+[8.2. Estructura del Equipo de Desarrollo (Recursos Humanos)	32](#heading=)
+
+[8.3. Matriz de Asignación de Responsabilidades (RACI)	32](#heading=)
+
+[9\. PLAN DE GESTIÓN DE RIESGOS	33](#heading=)
+
+[9.1. Introducción y Estructura de Desglose de Riesgos (RBS)	33](#heading=)
+
+[9.2. Matriz Cualitativa de Probabilidad e Impacto (PxI)	34](#heading=)
+
+[9.3. Plan de Respuesta y Medidas de Contingencia	34](#heading=)
+
+[10\. Gobernanza del Proyecto	35](#10.-gobernanza-del-proyecto)
+
+[11.Plan de Gestión de las Comunicaciones	35](#11.plan-de-gestión-de-las-comunicaciones)
+
+[11.1 Estrategia de Comunicación	35](#11.1-estrategia-de-comunicación)
+
+[11.2. Requerimientos de Comunicación	36](#11.2.-requerimientos-de-comunicación)
+
+[11.3. Matriz de Comunicaciones	36](#11.3.-matriz-de-comunicaciones)
+
+[11.4. Canales de Comunicación	37](#11.4.-canales-de-comunicación)
+
+[11.5. Escalamiento de Comunicaciones	37](#11.5.-escalamiento-de-comunicaciones)
+
+[11.6. Indicadores de Comunicación	37](#11.6.-indicadores-de-comunicación)
+
+[**CAPÍTULO II	38**](#capítulo-ii)
+
+[**1.Requerimientos	38**](#1.requerimientos)
+
+[1.1. Requerimientos Funcionales	38](#1.1.-requerimientos-funcionales)
+
+[1.2. Requerimientos No Funcionales	40](#1.2.-requerimientos-no-funcionales)
+
+[1.3. Requerimientos DevOps	41](#1.3.-requerimientos-devops)
+
+[**2.Historias de Usuario	42**](#2.historias-de-usuario)
+
+[2.1. Autenticación y seguridad	42](#2.1.-autenticación-y-seguridad)
+
+[\- HU-01.1 — Inicio de Sesión Seguro	42](#hu-01.1-—-inicio-de-sesión-seguro)
+
+[\- HU-01.2 — Gestión de Accesos	42](#hu-01.2-—-gestión-de-accesos)
+
+[2.2. Roles y Permisos	42](#2.2.-roles-y-permisos)
+
+[\- HU-02.1 — Asignación de Roles	42](#hu-02.1-—-asignación-de-roles)
+
+[\- HU-02.2 — Acceso Restringido Técnico	43](#hu-02.2-—-acceso-restringido-técnico)
+
+[2.3. Auditoría	43](#2.3.-auditoría)
+
+[\- HU-03.1 — Registro Inalterable	43](#hu-03.1-—-registro-inalterable)
+
+[2.4. Monitoreo Ambiental	43](#2.4.-monitoreo-ambiental)
+
+[2.5. Datos Ambientales	46](#2.5.-datos-ambientales)
+
+[2.6. Históricos	49](#2.6.-históricos)
+
+[2.7. Informes	50](#2.7.-informes)
+
+[2.8. Consulta Pública	53](#2.8.-consulta-pública)
+
+[2.9. Integración	53](#2.9.-integración)
+
+[2.10. Mapas	54](#2.10.-mapas)
+
+[2.11. Exportación	54](#2.11.-exportación)
+
+[2.12. Participación Ciudadano	55](#2.12.-participación-ciudadano)
+
+[2.13. Panel	56](#2.13.-panel)
+
+[2.14. Notificaciones	56](#2.14.-notificaciones)
+
+[2.15. OPTIMIZACIÓN (Imágenes)	57](#2.15.-optimización-\(imágenes\))
+
+[2.16. Hoja de ruta	57](#2.16.-hoja-de-ruta)
+
+[2.17. Requerimientos No Funcionales	58](#2.17.-requerimientos-no-funcionales)
+
+[2.18. Requisitos DevOps	59](#2.18.-requisitos-devops)
+
+[**3\. DISEÑO ARQUITECTÓNICO Y BASE DE DATOS- SMIA	62**](#3.-diseño-arquitectónico-y-base-de-datos--smia)
+
+[3.1. Visión General de la Arquitectura	62](#3.1.-visión-general-de-la-arquitectura)
+
+[3.2. Diagrama de arquitectura (vista de componentes)	62](#3.2.-diagrama-de-arquitectura-\(vista-de-componentes\))
+
+[3.3. CAPA FRONTEND (La Interfaz de Usuario)	63](#3.3.-capa-frontend-\(la-interfaz-de-usuario\))
+
+[3.4. CAPA BACKEND (La Lógica de Negocio y API REST)	64](#3.4.-capa-backend-\(la-lógica-de-negocio-y-api-rest\))
+
+[3.5 BASE DE DATOS	66](#3.5-base-de-datos)
+
+[**4\. IMPLEMENTACIÓN Y PROTOTIPADO TÉCNICO:	66**](#4.-implementación-y-prototipado-técnico:)
+
+[**5\. Flujo de trabajo y Cultura DevOps	70**](#5.-flujo-de-trabajo-y-cultura-devops)
+
+[**6\. Calidad, Transparencia y Coherencia de Planes	71**](#6.-calidad,-transparencia-y-coherencia-de-planes)
+
+[6.1. Pruebas Unitarias	71](#6.1.-pruebas-unitarias)
+
+[8.1.1. PIRÁMIDE DE PRUEBAS (Niveles Funcionales)	71](#8.1.1.-pirámide-de-pruebas-\(niveles-funcionales\))
+
+[6.2. PRUEBAS DE ACEPTACIÓN DEL USUARIO (UAT)	76](#6.2.-pruebas-de-aceptación-del-usuario-\(uat\))
+
+[8.3. Manuales	79](#8.3.-manuales)
+
+[**7\. ANEXOS TÉCNICOS Y TRAZABILIDAD:	83**](#7.-anexos-técnicos-y-trazabilidad:)
+
+[7.1 Anexo A. Arquitectura del Sistema SMIA	83](#7.1-anexo-a.-arquitectura-del-sistema-smia)
+
+[7.2. Anexo B. Modelo Entidad Relación (MER)	83](#7.2.-anexo-b.-modelo-entidad-relación-\(mer\))
+
+[7.3. Anexo C. Cronograma General	85](#7.3.-anexo-c.-cronograma-general)
+
+[7.4. Anexo D. Matriz de Riesgos	85](#7.4.-anexo-d.-matriz-de-riesgos)
+
+[7.5. Anexo E. Matriz de Trazabilidad de Requisitos (MTR)	86](#7.5.-anexo-e.-matriz-de-trazabilidad-de-requisitos-\(mtr\))
+
+# 
+
+# 
+
+# 
+
+# 
+
+# CAPÍTULO I {#capítulo-i}
+
+# 1.Introducción y Contexto del Proyecto  {#1.introducción-y-contexto-del-proyecto}
+
+### 1.1. Antecedentes (TDR GAMLP — Proyecto Basura 0\)  {#1.1.-antecedentes-(tdr-gamlp-—-proyecto-basura-0)}
 
 En el marco de las gestiones ante la Agencia Sueca de Cooperación Internacional para el Desarrollo (ASDI), se consolidaron recursos para el Proyecto "Basura 0" en Bolivia, implementado por HELVETAS, SWISSCONTACT y AGUATUYA.
 
 La Secretaría Municipal de Gestión Ambiental (SMGA) del GAMLP gestiona componentes de monitoreo con herramientas dispersas (Excel, papel). Por normativa legal, se requiere el diseño e implementación del Sistema Municipal de Información Ambiental (SMIA).
 
-### 1.2 Problema de Negocio 
+### 1.2 Problema de Negocio  {#1.2-problema-de-negocio}
 
 Fragmentación, desorganización y falta de integración tecnológica en la gestión de información ambiental del municipio de La Paz, lo que causa demoras en informes para el MMAyA, pérdida de datos por registros manuales y falta de transparencia ciudadana.
 
-### 1.3 Objetivo Principal 
+### 1.3 Objetivo Principal  {#1.3-objetivo-principal}
 
-## Diseñar, desarrollar e implementar el Sistema Municipal de Información Ambiental (SMIA) para el Gobierno Autónomo Municipal de La Paz, que permita registrar, almacenar, actualizar, gestionar y publicar información ambiental de uso institucional para funcionarios de la SMGA y de acceso público para la ciudadanía, asegurando la integración con el SIGIR nacional y el cumplimiento de la Ley N°755, en un plazo de 90 días calendario dentro del presupuesto aprobado de Bs. 208.800.
+## Diseñar, desarrollar e implementar el Sistema Municipal de Información Ambiental (SMIA) para el Gobierno Autónomo Municipal de La Paz, que permita registrar, almacenar, actualizar, gestionar y publicar información ambiental de uso institucional para funcionarios de la SMGA y de acceso público para la ciudadanía, asegurando la integración con el SIGIR nacional y el cumplimiento de la Ley N°755, en un plazo de 90 días calendario dentro del presupuesto aprobado de Bs. 208.800. {#diseñar,-desarrollar-e-implementar-el-sistema-municipal-de-información-ambiental-(smia)-para-el-gobierno-autónomo-municipal-de-la-paz,-que-permita-registrar,-almacenar,-actualizar,-gestionar-y-publicar-información-ambiental-de-uso-institucional-para-funcionarios-de-la-smga-y-de-acceso-público-para-la-ciudadanía,-asegurando-la-integración-con-el-sigir-nacional-y-el-cumplimiento-de-la-ley-n°755,-en-un-plazo-de-90-días-calendario-dentro-del-presupuesto-aprobado-de-bs.-208.800.}
 
 ## **2\. DEFINICIÓN DEL PARADIGMA METODOLÓGICO**
 
@@ -488,7 +696,7 @@ Se establecen acciones preventivas y correctivas (Contingencia) financiadas por 
 
 ### 
 
-## **10\. Gobernanza del Proyecto**
+## **10\. Gobernanza del Proyecto** {#10.-gobernanza-del-proyecto}
 
 La Gobernanza provee la estructura de autoridad, previniendo el "crecimiento descontrolado" (*Scope Creep*) de los requerimientos durante el desarrollo.
 
@@ -498,15 +706,15 @@ La Gobernanza provee la estructura de autoridad, previniendo el "crecimiento des
 2. **Control de Cambios:** Cualquier funcionalidad no descrita en el Documento de Especificaciones (Día 20\) exige llenar un *Formulario de Solicitud de Cambio*. El PM evaluará el impacto en tiempo/costo y el Comité lo rechazará o aprobará.  
 3. **Acuerdo de Nivel de Servicio (SLA) de Revisiones:** Para evitar cuellos de botella burocráticos, el cliente dispone de **3 a 5 días hábiles** para revisar manuales o código. La falta de observaciones en ese lapso implica "Aprobación por Silencio Administrativo", permitiendo al equipo continuar la programación.
 
-## **11.Plan de Gestión de las Comunicaciones** 
+## **11.Plan de Gestión de las Comunicaciones**  {#11.plan-de-gestión-de-las-comunicaciones}
 
-### 11.1 Estrategia de Comunicación
+### 11.1 Estrategia de Comunicación {#11.1-estrategia-de-comunicación}
 
 La estrategia de comunicación se basa en una comunicación formal para la aprobación de entregables y una comunicación operativa para el seguimiento diario del proyecto.
 
 Se emplearán reuniones periódicas, informes técnicos, actas de reunión, correo electrónico institucional y herramientas colaborativas de gestión de proyectos para asegurar la disponibilidad y trazabilidad de la información.
 
-### 11.2. Requerimientos de Comunicación 
+### 11.2. Requerimientos de Comunicación  {#11.2.-requerimientos-de-comunicación}
 
 | Información  | Destinatario  | Frecuencia  | Medio  |
 | :---- | :---- | :---- | :---- |
@@ -520,7 +728,7 @@ Se emplearán reuniones periódicas, informes técnicos, actas de reunión, corr
 | Informe de capacitación  | SMGA  | Fase final  | Documento formal  |
 | Acta de entrega final  | Sponsor y SMGA  | Cierre del proyecto  | Documento formal  |
 
-### 11.3. Matriz de Comunicaciones 
+### 11.3. Matriz de Comunicaciones  {#11.3.-matriz-de-comunicaciones}
 
 | Comunicación  | Responsable  | Receptor  | Frecuencia  |
 | :---- | :---- | :---- | :---- |
@@ -532,7 +740,7 @@ Se emplearán reuniones periódicas, informes técnicos, actas de reunión, corr
 | Validación de entregables  | Supervisor SMGA  | Equipo del proyecto  | Por hito  |
 | Informe final  | Jefe de Proyecto  | Sponsor y SMGA  | Cierre  |
 
-## 11.4. Canales de Comunicación 
+## 11.4. Canales de Comunicación  {#11.4.-canales-de-comunicación}
 
 Correo Electrónico Institucional
 
@@ -555,7 +763,7 @@ Utilizado para:
 * Control de versiones.  
 * Coordinación del equipo técnico.
 
-## 11.5. Escalamiento de Comunicaciones 
+## 11.5. Escalamiento de Comunicaciones  {#11.5.-escalamiento-de-comunicaciones}
 
 Cuando exista una situación que afecte significativamente el alcance, cronograma, costo o calidad del proyecto, se aplicará el siguiente esquema de escalamiento:
 
@@ -565,7 +773,7 @@ Cuando exista una situación que afecte significativamente el alcance, cronogram
 4. Comité Directivo (SMGA – Swisscontact).  
 5. Sponsor del Proyecto.
 
-## 11.6. Indicadores de Comunicación 
+## 11.6. Indicadores de Comunicación  {#11.6.-indicadores-de-comunicación}
 
 Para evaluar la efectividad de las comunicaciones se utilizarán los siguientes indicadores:
 
@@ -574,11 +782,11 @@ Para evaluar la efectividad de las comunicaciones se utilizarán los siguientes 
 * Tiempo promedio de respuesta a observaciones ≤ 3 días hábiles.  
 * Porcentaje de actas aprobadas sin observaciones mayores ≥ 90%.
 
-# CAPÍTULO II
+# **CAPÍTULO II** {#capítulo-ii}
 
-# 1.Requerimientos 
+# 1.Requerimientos  {#1.requerimientos}
 
-## 1.1. Requerimientos Funcionales
+## 1.1. Requerimientos Funcionales {#1.1.-requerimientos-funcionales}
 
 | ID | Requerimiento | Prioridad | Criterios de Aceptación |
 | ----- | ----- | ----- | ----- |
@@ -599,7 +807,7 @@ Para evaluar la efectividad de las comunicaciones se utilizarán los siguientes 
 | RF-15 | Compresión automática de fotografías | Baja | Las imágenes se comprimen sin afectar significativamente la calidad |
 | RF-16 | Documentación de aplicación móvil futura | Baja | Existe documentación del roadmap de la app móvil |
 
-## 1.2. Requerimientos No Funcionales
+## 1.2. Requerimientos No Funcionales {#1.2.-requerimientos-no-funcionales}
 
 | ID | Requerimiento | Prioridad | Criterios de Aceptación |
 | ----- | ----- | ----- | ----- |
@@ -620,7 +828,7 @@ Para evaluar la efectividad de las comunicaciones se utilizarán los siguientes 
 | RF-15 | Compresión de imágenes | Baja | Las imágenes se reducen sin perder calidad significativa |
 | RF-16 | Documentación app móvil futura | Baja | Existe documentación del roadmap de app móvil |
 
-## 1.3. Requerimientos DevOps
+## 1.3. Requerimientos DevOps {#1.3.-requerimientos-devops}
 
 | ID | Requerimiento | Prioridad | Criterios de Aceptación |
 | ----- | ----- | ----- | ----- |
@@ -629,11 +837,11 @@ Para evaluar la efectividad de las comunicaciones se utilizarán los siguientes 
 | DEV-03 | Integración Continua (CI/CD) | Alta | Se ejecutan pipelines automáticos en cada cambio de código |
 | DEV-04 | Pruebas de seguridad (Pentesting) | Media | Se realizan pruebas; se identifican y corrigen vulnerabilidades |
 
-# 2.Historias de Usuario
+# 2.Historias de Usuario {#2.historias-de-usuario}
 
-## 2.1. Autenticación y seguridad
+## 2.1. Autenticación y seguridad {#2.1.-autenticación-y-seguridad}
 
-- ### HU-01.1 — Inicio de Sesión Seguro
+- ### HU-01.1 — Inicio de Sesión Seguro {#hu-01.1-—-inicio-de-sesión-seguro}
 
 * Actor: Usuario del sistema  
 * Objetivo: Iniciar sesión con credenciales seguras protegidas por token JWT.  
@@ -645,7 +853,7 @@ Para evaluar la efectividad de las comunicaciones se utilizarán los siguientes 
 * RF asociado: RF-01 | Estimación: 3 puntos | Prioridad: Must Have.
 
 
-- ### HU-01.2 — Gestión de Accesos
+- ### HU-01.2 — Gestión de Accesos {#hu-01.2-—-gestión-de-accesos}
 
 * Actor: Administrador  
 * Objetivo: Gestionar accesos de usuarios (crear, activar, desactivar, desbloquear).  
@@ -656,9 +864,9 @@ Para evaluar la efectividad de las comunicaciones se utilizarán los siguientes 
 * Valor de negocio: Autonomía en gestión de cuentas, cumplimiento Normativa 337\.  
 * RF asociado: RF-01, RF-02 | Estimación: 2 puntos | Prioridad: Must Have.
 
-## 2.2. Roles y Permisos
+## 2.2. Roles y Permisos {#2.2.-roles-y-permisos}
 
-- ### HU-02.1 — Asignación de Roles
+- ### HU-02.1 — Asignación de Roles {#hu-02.1-—-asignación-de-roles}
 
 * Actor: Administrador  
 * Objetivo: Asignar roles (Técnico, Administrativo, Ciudadano).  
@@ -670,7 +878,7 @@ Para evaluar la efectividad de las comunicaciones se utilizarán los siguientes 
 * RF asociado: RF-02 | Estimación: 2 puntos | Prioridad: Must Have.
 
 
-- ### HU-02.2 — Acceso Restringido Técnico
+- ### HU-02.2 — Acceso Restringido Técnico {#hu-02.2-—-acceso-restringido-técnico}
 
 * Actor: Usuario técnico  
 * Objetivo: Acceder solo a módulos ambientales de su área.  
@@ -681,9 +889,9 @@ Para evaluar la efectividad de las comunicaciones se utilizarán los siguientes 
 * Valor de negocio: Prevención de errores humanos y protección de datos críticos.  
 * RF asociado: RF-02 | Estimación: 2 puntos | Prioridad: Must Have.
 
-## 2.3. Auditoría
+## 2.3. Auditoría {#2.3.-auditoría}
 
-- ### HU-03.1 — Registro Inalterable
+- ### HU-03.1 — Registro Inalterable {#hu-03.1-—-registro-inalterable}
 
 * Actor: Auditor de la SMGA  
 * Objetivo: Visualizar registro inalterable de acciones.  
@@ -695,7 +903,7 @@ Para evaluar la efectividad de las comunicaciones se utilizarán los siguientes 
 * Valor de negocio: Transparencia ante ASDI, Helvetas y MMAyA.  
 * RF asociado: RF-03 | Estimación: 3 puntos | Prioridad: Must Have.
 
-## 2.4. Monitoreo Ambiental 
+## 2.4. Monitoreo Ambiental  {#2.4.-monitoreo-ambiental}
 
 - HU-04.1 
 
@@ -781,7 +989,7 @@ Para evaluar la efectividad de las comunicaciones se utilizarán los siguientes 
 
   RF asociado: RF-04, RF-10 | Estimación: 5 puntos | Prioridad: Must Have
 
-## 2.5. Datos Ambientales 
+## 2.5. Datos Ambientales  {#2.5.-datos-ambientales}
 
 - HU-05.1 
 
@@ -867,7 +1075,7 @@ Para evaluar la efectividad de las comunicaciones se utilizarán los siguientes 
 
   RF asociado: RF-05 | Estimación: 3 puntos | Prioridad: Must Have
 
-##        2.6. Históricos 
+##        2.6. Históricos  {#2.6.-históricos}
 
 - HU-06.1  
 
@@ -883,7 +1091,7 @@ Para evaluar la efectividad de las comunicaciones se utilizarán los siguientes 
 
   RF asociado: RF-06 | Estimación: 5 puntos | Prioridad: Debe tener
 
-## 2.7. Informes 
+## 2.7. Informes  {#2.7.-informes}
 
 - HU-07.1 
 
@@ -969,7 +1177,7 @@ Para evaluar la efectividad de las comunicaciones se utilizarán los siguientes 
 
   RF asociado: RF-07 | Estimación: 3 puntos | Prioridad: Debe tener
 
-## 2.8. Consulta Pública
+## 2.8. Consulta Pública {#2.8.-consulta-pública}
 
 - HU-08.1 
 
@@ -985,7 +1193,7 @@ Para evaluar la efectividad de las comunicaciones se utilizarán los siguientes 
 
   RF asociado: RF-08 | Estimación: 3 puntos | Prioridad: Debe tener
 
-## 2.9. Integración
+## 2.9. Integración {#2.9.-integración}
 
 - HU-09.1 
 
@@ -1001,7 +1209,7 @@ Para evaluar la efectividad de las comunicaciones se utilizarán los siguientes 
 
   RF asociado: RF-05 | Estimación: 5 puntos | Prioridad: Debe tener
 
-## 2.10. Mapas
+## 2.10. Mapas {#2.10.-mapas}
 
 - HU-10.1 
 
@@ -1017,7 +1225,7 @@ Para evaluar la efectividad de las comunicaciones se utilizarán los siguientes 
 
   RF asociado: RF-10 | Estimación: 3 puntos | Prioridad: debería haber
 
-## 2.11. Exportación
+## 2.11. Exportación {#2.11.-exportación}
 
 - HU-11.1 
 
@@ -1033,7 +1241,7 @@ Para evaluar la efectividad de las comunicaciones se utilizarán los siguientes 
 
   RF asociado: RF-11 | Estimación: 3 puntos | Prioridad: debería haber
 
-## 2.12. Participación Ciudadano
+## 2.12. Participación Ciudadano {#2.12.-participación-ciudadano}
 
 - HU-12.1 
 
@@ -1049,7 +1257,7 @@ Para evaluar la efectividad de las comunicaciones se utilizarán los siguientes 
 
   RF asociado: RF-12 | Estimación: 5 puntos | Prioridad: debería haber
 
-## 2.13. Panel
+## 2.13. Panel {#2.13.-panel}
 
 - HU-14.1 
 
@@ -1065,7 +1273,7 @@ Para evaluar la efectividad de las comunicaciones se utilizarán los siguientes 
 
   RF asociado: RF-14 | Estimación: 5 puntos | Prioridad: Podría haber
 
-## 2.14. Notificaciones
+## 2.14. Notificaciones {#2.14.-notificaciones}
 
 - HU-13.1
 
@@ -1083,7 +1291,7 @@ Para evaluar la efectividad de las comunicaciones se utilizarán los siguientes 
 
   RF asociado: RF-13 | Estimación: 2 puntos | Prioridad: Podría haber
 
-## 2.15. OPTIMIZACIÓN (Imágenes)
+## 2.15. OPTIMIZACIÓN (Imágenes) {#2.15.-optimización-(imágenes)}
 
 - HU-15.1
 
@@ -1101,7 +1309,7 @@ Para evaluar la efectividad de las comunicaciones se utilizarán los siguientes 
 
   RF asociado: RF-15 | Estimación: 2 puntos | Prioridad: Podría haber
 
-## 2.16. Hoja de ruta
+## 2.16. Hoja de ruta {#2.16.-hoja-de-ruta}
 
 - HU-16.1
 
@@ -1117,7 +1325,7 @@ Para evaluar la efectividad de las comunicaciones se utilizarán los siguientes 
 
   RF asociado: RF-16 | Estimación: 1 punto | Prioridad: No tendrá — Fase 2
 
-## 2.17. Requerimientos No Funcionales
+## 2.17. Requerimientos No Funcionales {#2.17.-requerimientos-no-funcionales}
 
 - RNF-01 — Seguridad (Hashing de contraseñas)
 
@@ -1165,7 +1373,7 @@ Para evaluar la efectividad de las comunicaciones se utilizarán los siguientes 
 
   RNF asociado: RNF-03 | Estimación: 3 puntos | Prioridad: Debería haber
 
-##  2.18. Requisitos DevOps
+##  2.18. Requisitos DevOps {#2.18.-requisitos-devops}
 
 - DEV-01 — Contenerización con Docker
 
@@ -1234,9 +1442,9 @@ Para evaluar la efectividad de las comunicaciones se utilizarán los siguientes 
 
   RNF asociado: RNF-08 | Estimación: 3 puntos | Prioridad: Debe tener
 
-# 3\. DISEÑO ARQUITECTÓNICO Y BASE DE DATOS- SMIA
+# 3\. DISEÑO ARQUITECTÓNICO Y BASE DE DATOS- SMIA {#3.-diseño-arquitectónico-y-base-de-datos--smia}
 
-## 3.1. Visión General de la Arquitectura
+## 3.1. Visión General de la Arquitectura {#3.1.-visión-general-de-la-arquitectura}
 
 El Sistema Municipal de Información Ambiental (SMIA) adopta una **arquitectura de tres capas desacopladas** (cliente-servidor) con un enfoque de **API REST**.Esto significa que el frontend, el backend y la base de datos son aplicaciones independientes que se comunican a través de internet mediante el formato JSON y peticiones HTTPS. Esta separación permite escalar cada componente por separado, facilita el mantenimiento y mejora la seguridad.
 
@@ -1246,13 +1454,13 @@ El Sistema Municipal de Información Ambiental (SMIA) adopta una **arquitectura 
 
 **Capa de datos:** Base de datos oculta y protegida, accesible únicamente por el backend. Utiliza **PostgreSQL con extensión PostGIS** para manejar informacion geoespacial. 
 
-## 3.2. Diagrama de arquitectura (vista de componentes)
+## 3.2. Diagrama de arquitectura (vista de componentes) {#3.2.-diagrama-de-arquitectura-(vista-de-componentes)}
 
 A continuación se muestra el diagrama de componentes de la arquitectura del SMIA:
 
 **![][image1]**
 
-## 3.3. CAPA FRONTEND (La Interfaz de Usuario)
+## 3.3. CAPA FRONTEND (La Interfaz de Usuario) {#3.3.-capa-frontend-(la-interfaz-de-usuario)}
 
 Tecnologías utilizadas:
 
@@ -1301,7 +1509,7 @@ smia-frontend-angular/
 │   ├── assets/                    \# Logos del GAMLP, iconos, fuentes  
 │   └── styles.css                 \# Importación de Tailwind CSS
 
-## 3.4. CAPA BACKEND (La Lógica de Negocio y API REST)
+## 3.4. CAPA BACKEND (La Lógica de Negocio y API REST) {#3.4.-capa-backend-(la-lógica-de-negocio-y-api-rest)}
 
 Tecnologías utilizadas:
 
@@ -1349,7 +1557,7 @@ smia-backend-django/
 ├── requirements.txt               \# Librerías de Python  
 └── manage.py                      \# Orquestador de consola
 
-## 3.5 BASE DE DATOS 
+## 3.5 BASE DE DATOS  {#3.5-base-de-datos}
 
 **3.5.1.** **Motor de Base de Datos:** PostgreSQL con la extensión PostGIS. PostGIS convierte a PostgreSQL en una base de datos espacial, permitiendo guardar geométricas (puntos, líneas, polígonos) en lugar de solo texto y números.
 
@@ -1377,7 +1585,7 @@ smia-backend-django/
 
 # 
 
-# 4\. IMPLEMENTACIÓN Y PROTOTIPADO TÉCNICO:
+# 4\. IMPLEMENTACIÓN Y PROTOTIPADO TÉCNICO: {#4.-implementación-y-prototipado-técnico:}
 
 Para la demostración que la arquitectura es factible y que se ha implementado al menos una iteración funcional, se incluye las siguientes evidencia:
 
@@ -1389,7 +1597,7 @@ Para la demostración que la arquitectura es factible y que se ha implementado a
 
 ![][image5]
 
-# 5\. Flujo de trabajo y Cultura DevOps
+# 5\. Flujo de trabajo y Cultura DevOps {#5.-flujo-de-trabajo-y-cultura-devops}
 
 Implementación de la cultura **CAMS (Culture, Automation, Measurement, Sharing)**:
 
@@ -1399,11 +1607,11 @@ Implementación de la cultura **CAMS (Culture, Automation, Measurement, Sharing)
 
 # 
 
-# 6\. Calidad, Transparencia y Coherencia de Planes
+# 6\. Calidad, Transparencia y Coherencia de Planes {#6.-calidad,-transparencia-y-coherencia-de-planes}
 
-## 6.1. Pruebas Unitarias
+## 6.1. Pruebas Unitarias {#6.1.-pruebas-unitarias}
 
-### 8.1.1. PIRÁMIDE DE PRUEBAS (Niveles Funcionales)
+### 8.1.1. PIRÁMIDE DE PRUEBAS (Niveles Funcionales) {#8.1.1.-pirámide-de-pruebas-(niveles-funcionales)}
 
 Nuestra estrategia se basa en la pirámide de automatización, donde la base (pruebas unitarias) es amplia y la punta (pruebas de usuario) es específica. 
 
@@ -1516,7 +1724,7 @@ requerimientos académicos, sino que proporciona una base sólida para que el SM
 opere bajo un modelo de desarrollo profesional, reduciendo el riesgo de fallos en el  
 entorno de producción y asegurando un código limpio, seguro y mantenible.
 
-## 6.2. PRUEBAS DE ACEPTACIÓN DEL USUARIO (UAT) 
+## 6.2. PRUEBAS DE ACEPTACIÓN DEL USUARIO (UAT)  {#6.2.-pruebas-de-aceptación-del-usuario-(uat)}
 
 **6.2.1. INTRODUCCIÓN A LA FASE UAT** 
 
@@ -1639,7 +1847,7 @@ Gerente de Proyecto
 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ \_\_   
 **/**/2026 **/**/2026 
 
-## 8.3. Manuales
+## 8.3. Manuales {#8.3.-manuales}
 
 **8.3.1. Manual Técnico de Mantenimiento del Sistema (SMIA)**
 
@@ -1746,9 +1954,9 @@ Aplicable cuando el GAMLP requiere nuevas funciones (ej. agregar un nuevoparáme
 | ----- | ----- | ----- |
 | Regresión (E2E) Simular |  flujos clave usuario (ej. Creardenuncia) paraestabilidad global.  | Cypress / Angular E2E del   una   asegurar  |
 
-# 7\. ANEXOS TÉCNICOS Y TRAZABILIDAD:
+# 7\. ANEXOS TÉCNICOS Y TRAZABILIDAD: {#7.-anexos-técnicos-y-trazabilidad:}
 
-## 7.1 Anexo A. Arquitectura del Sistema SMIA
+## 7.1 Anexo A. Arquitectura del Sistema SMIA {#7.1-anexo-a.-arquitectura-del-sistema-smia}
 
 El Sistema Municipal de Información ambiental (SMIA) implementa una arquitectura Cliente–Servidor desacoplada basada en servicios REST, permitiendo la separación entre la capa de presentación, la lógica de negocio y el almacenamiento de datos. 
 
@@ -1778,7 +1986,7 @@ El Sistema Municipal de Información ambiental (SMIA) implementa una arquitectur
 * Interoperabilidad.  
 * Facilidad de integración con sistemas externos.
 
-## 7.2. Anexo B. Modelo Entidad Relación (MER)
+## 7.2. Anexo B. Modelo Entidad Relación (MER) {#7.2.-anexo-b.-modelo-entidad-relación-(mer)}
 
 La base de datos del SMIA se estructura en torno a las siguientes entidades principales:
 
@@ -1826,7 +2034,7 @@ La base de datos del SMIA se estructura en torno a las siguientes entidades prin
 * Las solicitudes Ciudadanas pueden derivar en inspecciones ambientales.  
 * Los módulos ambientales almacenan información relacionada mediante claves foráneas.
 
-## 7.3. Anexo C. Cronograma General
+## 7.3. Anexo C. Cronograma General {#7.3.-anexo-c.-cronograma-general}
 
 | FASE | DURACIÓN |
 | :---- | :---- |
@@ -1850,7 +2058,7 @@ H8: Aceptación del usuario.
 H9: Capacitación completada.  
 H10: Puesta en producción.
 
-## 7.4. Anexo D. Matriz de Riesgos
+## 7.4. Anexo D. Matriz de Riesgos {#7.4.-anexo-d.-matriz-de-riesgos}
 
 | RIESGO | PROBABILIDAD  | IMPACTO | NIVEL |
 | :---- | :---- | :---- | :---- |
@@ -1867,7 +2075,7 @@ H10: Puesta en producción.
 * Aplicar planes de contingencia definidos.  
 * Escalar riesgos críticos al Comité Directivo.
 
-## 7.5. Anexo E. Matriz de Trazabilidad de Requisitos (MTR)
+## 7.5. Anexo E. Matriz de Trazabilidad de Requisitos (MTR) {#7.5.-anexo-e.-matriz-de-trazabilidad-de-requisitos-(mtr)}
 
 | ID | REQUISITO | OBJETIVO DEL PROYECTO | MÓDULO RELACIONADO | MÉTODO DE VALIDACIÓN |
 | :---- | :---- | :---- | :---- | :---- |
