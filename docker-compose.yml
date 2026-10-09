@@ -1,7 +1,6 @@
 version: '3.8'
 
 services:
-  # Base de Datos con extensiones espaciales (SMIA)
   db:
     image: postgis/postgis:15-3.3
     container_name: smia_db
@@ -13,8 +12,8 @@ services:
       - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
 
-  # Backend Django
   backend:
     build: ./backend
     container_name: smia_backend
@@ -26,8 +25,11 @@ services:
       - db
     environment:
       DATABASE_URL: postgres://admin:adminpassword@db:5432/smia_db
+      ALLOWED_HOSTS: localhost,127.0.0.1,0.0.0.0,172.17.22.40,smia.local
+      CORS_ALLOWED_ORIGINS: http://localhost:4200,http://127.0.0.1:4200,http://172.17.22.40:4200,http://smia.local:4200
+      CORS_ALLOW_ALL_ORIGINS: "True"
+    restart: unless-stopped
 
-  # Frontend Angular
   frontend:
     build:
       context: ./frontend
@@ -40,6 +42,9 @@ services:
       - "4200:4200"
     depends_on:
       - backend
+    environment:
+      CHOKIDAR_USEPOLLING: "true"
+    restart: unless-stopped
 
 volumes:
   postgres_data:

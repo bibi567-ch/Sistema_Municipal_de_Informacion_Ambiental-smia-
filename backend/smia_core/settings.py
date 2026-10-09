@@ -7,9 +7,28 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'clave-local-desarrollo-no-usar-en-prod')
 
-DEBUG = True
+DEBUG = os.environ.get('DEBUG', 'True').lower() == 'true'
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+ALLOWED_HOSTS = [
+    host.strip()
+    for host in os.environ.get(
+        'ALLOWED_HOSTS',
+        'localhost,127.0.0.1,0.0.0.0'
+    ).split(',')
+    if host.strip()
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    origin.strip()
+    for origin in os.environ.get(
+        'CSRF_TRUSTED_ORIGINS',
+        ''
+    ).split(',')
+    if origin.strip()
+]
+
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+USE_X_FORWARDED_HOST = True
 
 # ── Apps ─────────────────────────────────────────────────────────────
 INSTALLED_APPS = [
@@ -86,18 +105,20 @@ SIMPLE_JWT = {
 
 # ── CORS ──────────────────────────────────────────────────────────────
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:4200",
-    "http://localhost:4201",
-    "http://127.0.0.1:4200",
-    "http://127.0.0.1:4201",
+    origin.strip()
+    for origin in os.environ.get(
+        'CORS_ALLOWED_ORIGINS',
+        'http://localhost:4200,http://localhost:4201,http://127.0.0.1:4200'
+    ).split(',')
+    if origin.strip()
 ]
-
 LANGUAGE_CODE = 'es-bo'
 TIME_ZONE = 'America/La_Paz'
 USE_I18N = True
 USE_TZ = True
 
 STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 TEMPLATES = [
@@ -115,4 +136,5 @@ TEMPLATES = [
         },
     },
 ]
-CORS_ALLOW_ALL_ORIGINS = True  # Solo para desarrollo. En producción pondremos la URL real.
+CORS_ALLOW_ALL_ORIGINS = os.environ.get('CORS_ALLOW_ALL_ORIGINS', 'True').lower() == 'true'
+CORS_ALLOW_CREDENTIALS = True

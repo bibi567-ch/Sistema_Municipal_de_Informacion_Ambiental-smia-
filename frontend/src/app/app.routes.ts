@@ -1,5 +1,6 @@
 // src/app/app.routes.ts
 import { Routes } from '@angular/router';
+import { authGuard } from './core/guards/auth.guard';
 
 export const routes: Routes = [
   // Portal ciudadano — página de inicio pública
@@ -62,5 +63,13 @@ export const routes: Routes = [
         .then(m => m.CargaResiduosComponent)
   },
 
-  { path: '**', redirectTo: '' }
+  { path: '**', redirectTo: '' },
+
+  {
+    path: 'reportes',
+    canActivate: [authGuard],
+    loadComponent: () =>
+      import('./features/reportes/dashboard-reportes/dashboard-reportes.component')
+        .then(m => m.DashboardReportesComponent)
+  },
 ];

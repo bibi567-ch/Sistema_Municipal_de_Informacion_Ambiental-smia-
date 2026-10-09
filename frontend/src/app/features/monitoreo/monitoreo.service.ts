@@ -3,11 +3,12 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { AuthService } from '../../services/auth.service';
+import { environment } from '../../../environments/environment';
 
 @Injectable({ providedIn: 'root' })
 export class MonitoreoService {
 
-  private readonly API = '/api/monitoreo';
+  private readonly API = `${environment.apiBaseUrl}/api/monitoreo`;
 
   constructor(
     private http: HttpClient,

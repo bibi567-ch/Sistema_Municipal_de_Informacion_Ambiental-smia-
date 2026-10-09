@@ -14,6 +14,9 @@ urlpatterns = [
     # Mapa unificado — público
     path('mapa/',                    MapaUnificadoView.as_view()),
 
+    path('admin/', admin.site.urls),
+    path('api/monitoreo/', include('apps.monitoreo.urls')),
+
     # Aire
     path('aire/estaciones/',         EstacionAireListCreateView.as_view()),
     path('aire/estaciones/<int:pk>/',EstacionAireDetailView.as_view()),
@@ -32,4 +35,7 @@ urlpatterns = [
 
     # Vehicular
     path('vehicular/mediciones/',    MedicionVehicularListCreateView.as_view()),
+
+    #estadisticas
+     path('estadisticas/', views.estadisticas_view, name='estadisticas'),
 ]

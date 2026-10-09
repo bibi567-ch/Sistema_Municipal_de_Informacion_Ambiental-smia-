@@ -8,7 +8,10 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework.parsers import MultiPartParser, FormParser
+from rest_framework import status
 from django.utils import timezone
+from rest_framework.decorators import api_view, permission_classes  # ← NUEVO
+from rest_framework.permissions import AllowAny 
 import csv
 import io
 
@@ -219,3 +222,38 @@ class MedicionVehicularListCreateView(generics.ListCreateAPIView):
 
     def get_queryset(self):
         return MedicionVehicular.objects.select_related('punto').all()
+
+@api_view(['GET'])
+@permission_classes([AllowAny])
+def estadisticas_view(request):
+    """
+    Endpoint de estadísticas generales del sistema de monitoreo.
+    
+    GET /api/monitoreo/estadisticas/
+    
+    Devuelve un resumen con los totales de cada módulo ambiental.
+    Público (no requiere autenticación) para el portal ciudadano.
+    """
+    try:
+        # ─────────────────────────────────────────────
+        # Aquí irían las consultas reales. Ejemplo:
+        # total_puntos = PuntoMonitoreo.objects.count()
+        # total_aire = EstacionAire.objects.filter(activa=True).count()
+        # total_agua = PuntoAgua.objects.count()
+        # ─────────────────────────────────────────────
+        
+        # Mientras tanto, valores de prueba:
+        data = {
+            "total_puntos": 42,
+            "total_estaciones_aire": 8,
+            "total_puntos_agua": 12,
+            "mensaje": "Datos actualizados correctamente",
+            "estado": "ok",
+        }
+        return Response(data, status=status.HTTP_200_OK)
+    
+    except Exception as e:
+        return Response(
+            {"error": f"Error al calcular estadísticas: {str(e)}"},
+            status=status.HTTP_500_INTERNAL_SERVER_ERROR
+        )

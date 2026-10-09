@@ -1,0 +1,11 @@
+services:
+  - type: static
+    name: smia-frontend
+    env: static
+    region: oregon
+    plan: free
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist/smia-frontend/browser
+    envVars:
+      - key: API_BASE_URL
+        value: "https://smia-backend.onrender.com"

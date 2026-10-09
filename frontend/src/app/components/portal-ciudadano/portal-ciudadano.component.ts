@@ -2,9 +2,11 @@ import { Component, signal, OnInit, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
 import { AuthService } from '../../services/auth.service';
 import { MonitoreoService } from '../../services/monitoreo.service';
 import { MapaLeafletComponent, PuntoMapa } from '../../shared/mapa-leaflet/mapa-leaflet.component';
+import { environment } from '../../../environments/environment';
 
 interface ZonaAire { zona: string; ica: number; nivel: string; color: string; contaminante: string; actualizacion: string; }
 interface AlertaActiva { tipo: string; zona: string; descripcion: string; fecha: string; icono: string; }
@@ -12,16 +14,17 @@ interface AlertaActiva { tipo: string; zona: string; descripcion: string; fecha:
 @Component({
   selector: 'app-portal-ciudadano',
   standalone: true,
-  imports: [CommonModule, RouterLink, FormsModule, MapaLeafletComponent], // <-- ¡Aquí conectamos el mapa!
+  imports: [CommonModule, RouterLink, FormsModule, MapaLeafletComponent],
   templateUrl: './portal-ciudadano.component.html',
   styleUrls: ['./portal-ciudadano.component.css']
 })
 export class PortalCiudadanoComponent implements OnInit {
 
   authService = inject(AuthService);
-  monitoreoService = inject(MonitoreoService); // <-- Nuestro nuevo mensajero
+  monitoreoService = inject(MonitoreoService);
+  http = inject(HttpClient); // <-- Agregado para enviar las denuncias
 
-  puntosMapa: PuntoMapa[] = []; // <-- Aquí guardaremos los puntos del mapa
+  puntosMapa: PuntoMapa[] = [];
 
   // Modal de login
   mostrarLogin = signal(false);
@@ -36,6 +39,7 @@ export class PortalCiudadanoComponent implements OnInit {
   denuncia = { tipo: '', descripcion: '', ubicacion: '', email_contacto: '' };
   denunciaEnviada = signal(false);
   numeroDenuncia = signal('');
+  enviandoDenuncia = signal(false);
 
   // Datos ambientales de muestra
   zonas: ZonaAire[] = [
@@ -50,10 +54,10 @@ export class PortalCiudadanoComponent implements OnInit {
   ];
 
   estadisticas = { estaciones_activas: 18, denuncias_mes: 143, denuncias_resueltas: 127, rios_monitoreados: 6 };
-  tiposDenuncia = ['Depósito ilegal de basura', 'Quema de residuos', 'Ruido excesivo', 'Contaminación de río o laguna', 'Otro problema ambiental'];
+  tiposDenuncia = ['Contaminación Aire', 'Contaminación Ríos', 'Tala Ilegal', 'Basura', 'Ruido', 'Otro'];
 
   ngOnInit(): void {
-    this.cargarMapa(); // <-- Al abrir la página, pedimos los datos del mapa
+    this.cargarMapa();
   }
 
   cargarMapa(): void {
@@ -90,7 +94,6 @@ export class PortalCiudadanoComponent implements OnInit {
     this.authService.login(this.loginEmail, this.loginPassword).subscribe({
       next: (respuesta) => {
         this.loginCargando.set(false);
-        alert('¡INGRESO EXITOSO! Tu rol es: ' + respuesta.usuario.rol);
         this.cerrarLogin();
       },
       error: (error) => {
@@ -106,9 +109,23 @@ export class PortalCiudadanoComponent implements OnInit {
     this.mostrarFormDenuncia.set(false);
     this.denuncia = { tipo: '', descripcion: '', ubicacion: '', email_contacto: '' };
   }
+  
+  // AHORA SÍ ENVÍA A LA BASE DE DATOS
   onEnviarDenuncia(): void {
     if (!this.denuncia.tipo || !this.denuncia.descripcion || !this.denuncia.ubicacion) return;
-    this.numeroDenuncia.set('DEN-2026-' + Math.floor(Math.random() * 9000 + 1000));
-    this.denunciaEnviada.set(true);
+    this.enviandoDenuncia.set(true);
+
+    this.http.post<any>(`${environment.apiBaseUrl}/api/denuncias/`, this.denuncia).subscribe({
+      next: (res) => {
+        this.numeroDenuncia.set(res.numero_seguimiento);
+        this.denunciaEnviada.set(true);
+        this.enviandoDenuncia.set(false);
+      },
+      error: (err) => {
+        console.error(err);
+        alert('Ocurrió un error al enviar la denuncia. Intente de nuevo.');
+        this.enviandoDenuncia.set(false);
+      }
+    });
   }
 }

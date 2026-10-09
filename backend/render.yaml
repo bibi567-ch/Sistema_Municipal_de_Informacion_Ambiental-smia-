@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: smia-backend
+    env: python
+    region: oregon
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn smia_core.wsgi:application
+    envVars:
+      - key: DJANGO_SECRET_KEY
+        generateValue: true
+      - key: DEBUG
+        value: "False"
+      - key: ALLOWED_HOSTS
+        value: "smia-backend.onrender.com"
+      - key: CSRF_TRUSTED_ORIGINS
+        value: "https://smia-backend.onrender.com"
+      - key: CORS_ALLOWED_ORIGINS
+        value: "https://smia-frontend.onrender.com"
+      - key: CORS_ALLOW_ALL_ORIGINS
+        value: "False"

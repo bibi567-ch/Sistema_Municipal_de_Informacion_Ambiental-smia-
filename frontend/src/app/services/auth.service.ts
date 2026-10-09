@@ -3,6 +3,7 @@ import { Injectable, signal } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { Observable, tap, catchError, throwError } from 'rxjs';
+import { environment } from '../../environments/environment';
 
 export interface Usuario {
   id: number;
@@ -25,10 +26,10 @@ export class AuthService {
   readonly usuarioActual = signal<Usuario | null>(null);
   readonly cargando      = signal<boolean>(false);
 
-  private readonly API       = '/api';
+  private readonly API       = `${environment.apiBaseUrl}/api`;
   private readonly TOKEN_KEY = 'smia_access';
   private readonly REF_KEY   = 'smia_refresh';
-  private apiUrl = 'http://127.0.0.1:8000/api/auth';
+  private apiUrl = `${environment.apiBaseUrl}/api/auth`;
 
   constructor(
     private http:   HttpClient,

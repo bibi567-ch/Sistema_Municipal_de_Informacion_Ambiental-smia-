@@ -1,13 +1,12 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { environment } from '../../environments/environment';
 
 @Injectable({ providedIn: 'root' })
 export class MonitoreoService {
 
-  // La dirección de tu backend en Django
-  private readonly API = 'http://127.0.0.1:8000/api/monitoreo';
-
+  private readonly API = `${environment.apiBaseUrl}/api/monitoreo`;
   constructor(private http: HttpClient) {}
 
   // Busca la llave de seguridad (Token) del usuario que inició sesión
